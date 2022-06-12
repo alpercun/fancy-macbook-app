@@ -1,9 +1,9 @@
 import React from 'react'
-import './App.css'
+import './App.scss'
 
 const App = () => {
   return (
-    <div className="App">
+    <div className="app">
       Hello Custom Macbook Apps
     </div>
   );

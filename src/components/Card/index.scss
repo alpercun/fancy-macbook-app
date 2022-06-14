@@ -1,0 +1,45 @@
+.card {
+  width: 300px;
+  height: 250px;
+  background: radial-gradient(circle at top, rgba(41, 41, 46, 1) 0%, rgba(25, 25, 28, 1) 100%);
+  padding: 24px;
+  border-radius: $spacer-4;
+  transition: 0.3s;
+  position: relative;
+
+  .header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .logo {
+      img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: $gray-5;
+      }
+    }
+
+    .name {
+      margin-left: 10px;
+      font-size: 20px;
+      font-weight: bold;
+      color: $gray-3;
+    }
+  }
+
+  .body {
+    color: $gray-1;
+  }
+
+  &:hover {
+    background-color: $gray-5;
+  }
+
+  .action-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}

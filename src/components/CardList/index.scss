@@ -1,0 +1,9 @@
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  &>* {
+    margin: $spacer-4;
+  }
+}

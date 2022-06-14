@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "fig",
+    "logo": "https://pbs.twimg.com/profile_images/1319410808925741056/weExhTBA_400x400.jpg",
+    "description": "Fig adds IDE-style autocomplete to your existing terminal. Move faster with Fig.",
+    "categories": ["cli"]
+  },
+  {
+    "id": 2,
+    "name": "alfred",
+    "logo": "https://pbs.twimg.com/profile_images/3441709541/9fb69dcff86624e62ecaaa58c363e15b_400x400.jpeg",
+    "description": "Alfred is an award-winning app for macOS which boosts your efficiency with hotkeys, keywords, text expansion and more.",
+    "categories": ["productivity "]
+  }
+]

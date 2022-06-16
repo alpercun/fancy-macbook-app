@@ -1,10 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:500);
 
-input[type="checkbox"] {
-  display: none;
-}
-
-.plusminus {
+.action-button {
   position: absolute;
   border-radius: 50%;
   width: 40px;
@@ -13,47 +9,47 @@ input[type="checkbox"] {
   position: absolute;
   top: -10px;
   right: -10px;
-}
-
-.plusminus span:nth-child(1) {
-  display: block;
-  position: absolute;
-  margin: 0 26%;
-  width: 50%;
-  height: 5px;
-  border-radius: $spacer-1;
-  background: $white;
-  top: calc(50% - 3.5px);
-  -moz-transition: all .25s ease;
-  -webkit-transition: all .25s ease;
-  -o-transition: all .25s ease;
-  transition: all .25s ease;
-}
-
-.plusminus span:nth-child(2) {
-  display: block;
-  position: absolute;
-  margin: 23% 3%;
-  width: 5px;
-  height: 50%;
-  border-radius: $spacer-1;
-  background: $white;
-  left: calc(50% - 3.5px);
-  -moz-transition: all .25s ease;
-  -webkit-transition: all .25s ease;
-  -o-transition: all .25s ease;
-  transition: all .25s ease;
-}
-
-#first:checked~.plusminus span:nth-child(2) {
-  background: $white;
-  -moz-transform: rotate(-90deg);
-  -webkit-transform: rotate(-90deg);
-  -o-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-}
-
-label {
-  margin: 90px auto 0;
   cursor: pointer;
+
+  >span:nth-child(1) {
+    display: block;
+    position: absolute;
+    margin: 0 26%;
+    width: 50%;
+    height: 5px;
+    border-radius: $spacer-1;
+    background: $white;
+    top: calc(50% - 3.5px);
+    -moz-transition: all .25s ease;
+    -webkit-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+  }
+
+  >span:nth-child(2) {
+    display: block;
+    position: absolute;
+    margin: 23% 3%;
+    width: 5px;
+    height: 50%;
+    border-radius: $spacer-1;
+    background: $white;
+    left: calc(50% - 3.5px);
+    -moz-transition: all .25s ease;
+    -webkit-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+  }
+
+  &.minus {
+    background: $red-1;
+
+    >span:nth-child(2) {
+      background: $white;
+      -moz-transform: rotate(-90deg);
+      -webkit-transform: rotate(-90deg);
+      -o-transform: rotate(-90deg);
+      transform: rotate(-90deg);
+    }
+  }
 }

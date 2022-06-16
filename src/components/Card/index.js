@@ -1,19 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { ActionButton } from '../ActionButton';
 
-const Card = ({ data }) => {
+const Card = ({ data, isAdded, addToSidebar, removeFromSidebar }) => {
   const { logo, name, description } = data;
 
-  const [isHover, setIsHover] = React.useState(false);
-  const showHover = () => {
-    isHover ? setIsHover(false) : setIsHover(true);
-  }
+  const [showActionButton, setShowActionButton] = useState(false);
+
+  const showButton = () => setShowActionButton(true);
+  const hideButton = () => !isAdded && setShowActionButton(false);
 
   return (
     <div
       className="card"
-      onMouseEnter={showHover}
-      onMouseLeave={showHover}
+      onMouseEnter={showButton}
+      onMouseLeave={hideButton}
     >
       <div className="header">
         <div className="logo">
@@ -30,8 +30,12 @@ const Card = ({ data }) => {
         {description}
       </div>
       {
-        isHover && (
-          <ActionButton className="action-button" />)
+        showActionButton && (
+          <ActionButton
+            addToSidebar={addToSidebar}
+            removeFromSidebar={removeFromSidebar}
+            isAdded={isAdded}
+          />)
       }
     </div>
   )

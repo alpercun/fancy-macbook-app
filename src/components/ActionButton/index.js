@@ -1,25 +1,14 @@
 import React from 'react'
 
-const ActionButton = () => {
-  const [isClicked, setIsClicked] = React.useState(false);
-  const handleClick = () => {
-    isClicked ? setIsClicked(false) : setIsClicked(true);
-  }
+const ActionButton = ({ addToSidebar, isAdded, removeFromSidebar }) => {
 
   return (
-    <div>
-      <input type="checkbox" id="first" />
-      <label
-        for="first"
-        class="plusminus"
-        onClick={handleClick}
-        style={{
-          backgroundColor: isClicked ? '#ff6b6b' : '#1dd1a1'
-        }}
-      >
-        <span></span>
-        <span></span>
-      </label>
+    <div
+      onClick={isAdded ? removeFromSidebar : addToSidebar}
+      className={`action-button ${isAdded ? 'minus' : 'plus'}`}
+    >
+      <span></span>
+      <span></span>
     </div>
   )
 }

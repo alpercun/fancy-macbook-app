@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { ActionButton } from '../ActionButton';
 
-const Card = ({ data, isAdded, addToSidebar, removeFromSidebar }) => {
+const Card = ({ data, isAdded, addToInput, removeFromInput }) => {
   const { logo, name, description } = data;
 
   const [showActionButton, setShowActionButton] = useState(false);
@@ -32,8 +32,8 @@ const Card = ({ data, isAdded, addToSidebar, removeFromSidebar }) => {
       {
         showActionButton && (
           <ActionButton
-            addToSidebar={addToSidebar}
-            removeFromSidebar={removeFromSidebar}
+            addToInput={addToInput}
+            removeFromInput={removeFromInput}
             isAdded={isAdded}
           />)
       }

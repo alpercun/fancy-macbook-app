@@ -1,10 +1,10 @@
 import React from 'react'
 
-const ActionButton = ({ addToSidebar, isAdded, removeFromSidebar }) => {
+const ActionButton = ({ addToInput, isAdded, removeFromInput }) => {
 
   return (
     <div
-      onClick={isAdded ? removeFromSidebar : addToSidebar}
+      onClick={isAdded ? removeFromInput : addToInput}
       className={`action-button ${isAdded ? 'minus' : 'plus'}`}
     >
       <span></span>

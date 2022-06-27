@@ -3,23 +3,23 @@ import { Card } from '../Card'
 import db from '../../assets/db.json'
 
 const CardList = ({ setData }) => {
-  const [sidebarItems, setSidebarItems] = useState([]);
+  const [inputItems, setInputItems] = useState([]);
 
   useEffect(() => {
-    setData(sidebarItems);
+    setData(inputItems);
   });
 
-  const isItemAdded = (item) => sidebarItems.some(sidebarItem => sidebarItem.id === item.id);
+  const isItemAdded = (item) => inputItems.some(inputItem => inputItem.id === item.id);
 
-  const addToSidebar = (item) => {
+  const addToInput = (item) => {
     if (!isItemAdded(item)) {
-      setSidebarItems([...sidebarItems, item]);
+      setInputItems([...inputItems, item]);
     }
   }
 
-  const removeFromSidebar = (item) => {
+  const removeFromInput = (item) => {
     if (isItemAdded(item)) {
-      setSidebarItems(sidebarItems.filter(i => i.id !== item.id));
+      setInputItems(inputItems.filter(i => i.id !== item.id));
     }
   }
 
@@ -30,8 +30,8 @@ const CardList = ({ setData }) => {
           key={index}
           data={item}
           isAdded={isItemAdded(item)}
-          addToSidebar={() => addToSidebar(item)}
-          removeFromSidebar={() => removeFromSidebar(item)}
+          addToInput={() => addToInput(item)}
+          removeFromInput={() => removeFromInput(item)}
         />
       ))}
     </div>

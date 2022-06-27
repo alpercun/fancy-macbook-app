@@ -1,0 +1,88 @@
+.input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $spacer-2;
+  width: 600px;
+  height: 45px;
+  left: 0;
+  margin-top: $spacer-4;
+  border-radius: $spacer-3;
+  position: relative;
+  background-color: $white;
+  border: $spacer-2 solid $gray-5;
+  position: relative;
+
+  .input-content {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 90%;
+    text-overflow: ellipsis;
+    font-size: 24px;
+    /* Safari */
+    -webkit-user-select: none;
+    /* Standard syntax */
+    user-select: none;
+  }
+
+  .copy {
+    position: absolute;
+    right: 0;
+    width: 50px;
+    height: 100%;
+    border-radius: 0 $spacer-2 $spacer-2 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.active {
+      background-color: $green-2;
+      cursor: pointer;
+      transition: .4s ease;
+    }
+
+    &.disabled {
+      background-color: $gray-1;
+      cursor: not-allowed;
+      transition: .4s ease;
+    }
+
+    svg {
+      fill: white;
+    }
+  }
+
+  .tooltip {
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: -45px;
+    padding: $spacer-3;
+    border-radius: $spacer-3;
+    display: none;
+    transition: height 350ms ease-in-out;
+
+    &:before {
+      content: '';
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      bottom: -4px;
+      left: 45%;
+      background-color: black;
+      border-radius: $spacer-1;
+      transform: rotate(45deg);
+    }
+
+    &.disabled {
+      display: none;
+      transition: height 350ms ease-in-out;
+    }
+
+    &.active {
+      display: block;
+      transition: height 350ms ease-in-out;
+    }
+  }
+}

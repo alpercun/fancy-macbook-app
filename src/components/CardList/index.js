@@ -1,9 +1,13 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Card } from '../Card'
 import db from '../../assets/db.json'
 
-const CardList = () => {
+const CardList = ({ setData }) => {
   const [sidebarItems, setSidebarItems] = useState([]);
+
+  useEffect(() => {
+    setData(sidebarItems);
+  });
 
   const isItemAdded = (item) => sidebarItems.some(sidebarItem => sidebarItem.id === item.id);
 

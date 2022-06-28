@@ -33,6 +33,17 @@
     color: $gray-1;
   }
 
+  .categories {
+    margin-top: $spacer-4;
+    display: flex;
+    flex-wrap: wrap;
+
+    >* {
+      margin-right: $spacer-2;
+      margin-bottom: $spacer-2;
+    }
+  }
+
   &:hover {
     background-color: $gray-5;
   }

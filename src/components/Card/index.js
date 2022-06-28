@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
+
 import { ActionButton } from '../ActionButton';
+import { Badge } from '../Badge';
 
 const Card = ({ data, isAdded, addToInput, removeFromInput }) => {
-  const { logo, name, description } = data;
+  const { logo, name, description, categories } = data;
 
   const [showActionButton, setShowActionButton] = useState(false);
 
@@ -28,6 +30,14 @@ const Card = ({ data, isAdded, addToInput, removeFromInput }) => {
       </div>
       <div className="body">
         {description}
+      </div>
+      <div className="categories">
+        {
+          categories.map(
+            (category, index) =>
+              <Badge category={category} key={index} />
+          )
+        }
       </div>
       {
         showActionButton && (

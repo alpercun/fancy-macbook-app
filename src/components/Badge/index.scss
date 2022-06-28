@@ -1,0 +1,15 @@
+.badge {
+  height: 20px;
+  border-radius: $spacer-2;
+  background-color: $blue-2;
+  text-align: center;
+  display: inline-flex;
+  color: $white;
+  min-width: 16px;
+  padding: $spacer-2 $spacer-3;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $blue-1;
+  }
+}

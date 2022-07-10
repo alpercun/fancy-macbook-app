@@ -2,12 +2,17 @@ import React, { useEffect, useState } from 'react'
 import { Card } from '../Card'
 import db from '../../assets/db.json'
 
-const CardList = ({ setData }) => {
+const CardList = ({ setData, setFilteredKeyword }) => {
   const [inputItems, setInputItems] = useState([]);
 
   useEffect(() => {
     setData(inputItems);
   });
+
+  const filteredData = db.filter(item => {
+    return item.name.toLowerCase().includes(setFilteredKeyword.toLowerCase())
+      || item.categories.includes(setFilteredKeyword);
+  })
 
   const isItemAdded = (item) => inputItems.some(inputItem => inputItem.id === item.id);
 
@@ -25,7 +30,7 @@ const CardList = ({ setData }) => {
 
   return (
     <div className="card-list">
-      {db.map((item, index) => (
+      {filteredData.map((item, index) => (
         <Card
           key={index}
           data={item}

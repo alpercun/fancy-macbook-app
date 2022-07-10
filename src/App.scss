@@ -1,4 +1,4 @@
-@import './assets/styles/variables/index';
+@import "./assets/styles/variables/index";
 
 .container {
   display: flex;
@@ -10,5 +10,6 @@
     align-items: center;
     width: 1400px;
     height: 100%;
+    margin-top: 20px;
   }
 }

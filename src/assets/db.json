@@ -22,86 +22,93 @@
   },
   {
     "id": 4,
-    "name": "alfred",
-    "logo": "https://pbs.twimg.com/profile_images/3441709541/9fb69dcff86624e62ecaaa58c363e15b_400x400.jpeg",
-    "description": "Alfred is an award-winning app for macOS which boosts your efficiency with hotkeys, keywords, text expansion and more.",
+    "name": "libreoffice",
+    "logo": "https://www.logo.wine/a/logo/LibreOffice_Calc/LibreOffice_Calc-Logo.wine.svg",
+    "description": "LibreOffice is a free and powerful office suite, and a successor to OpenOffice.org (commonly known as OpenOffice). Its clean interface and feature-rich tools help you unleash your creativity and enhance your productivity.",
     "categories": ["productivity"]
   },
   {
     "id": 5,
-    "name": "alfred",
-    "logo": "https://pbs.twimg.com/profile_images/3441709541/9fb69dcff86624e62ecaaa58c363e15b_400x400.jpeg",
-    "description": "Alfred is an award-winning app for macOS which boosts your efficiency with hotkeys, keywords, text expansion and more.",
-    "categories": ["productivity"]
+    "name": "macs fan control",
+    "logo": "https://pbs.twimg.com/media/FQDNJi1WUAER6Bo?format=jpg&name=small",
+    "description": "Monitor and control your computer's fans.",
+    "categories": ["system"]
   },
   {
     "id": 6,
-    "name": "alfred",
-    "logo": "https://pbs.twimg.com/profile_images/3441709541/9fb69dcff86624e62ecaaa58c363e15b_400x400.jpeg",
-    "description": "Alfred is an award-winning app for macOS which boosts your efficiency with hotkeys, keywords, text expansion and more.",
+    "name": "spectacle",
+    "logo": "https://pbs.twimg.com/profile_images/697149200040124416/frE-tzOh_400x400.png",
+    "description": "Move and resize windows with ease.",
     "categories": ["productivity"]
   },
   {
     "id": 7,
-    "name": "alfred",
-    "logo": "https://pbs.twimg.com/profile_images/3441709541/9fb69dcff86624e62ecaaa58c363e15b_400x400.jpeg",
-    "description": "Alfred is an award-winning app for macOS which boosts your efficiency with hotkeys, keywords, text expansion and more.",
+    "name": "rectangle",
+    "logo": "https://rectangleapp.com/images/mac512pts1x.png",
+    "description": "Move and resize windows in macOS using keyboard shortcuts or snap areas.",
     "categories": ["productivity"]
   },
   {
     "id": 8,
-    "name": "alfred",
-    "logo": "https://pbs.twimg.com/profile_images/3441709541/9fb69dcff86624e62ecaaa58c363e15b_400x400.jpeg",
-    "description": "Alfred is an award-winning app for macOS which boosts your efficiency with hotkeys, keywords, text expansion and more.",
-    "categories": ["productivity"]
+    "name": "authy",
+    "logo": "https://seeklogo.com/images/A/authy-logo-5598145895-seeklogo.com.png",
+    "description": "Enable 2FA for your favorite sites. Go beyond the password and protect yourself from hackers and account takeovers.",
+    "categories": ["security"]
   },
   {
     "id": 9,
-    "name": "alfred",
-    "logo": "https://pbs.twimg.com/profile_images/3441709541/9fb69dcff86624e62ecaaa58c363e15b_400x400.jpeg",
-    "description": "Alfred is an award-winning app for macOS which boosts your efficiency with hotkeys, keywords, text expansion and more.",
+    "name": "meeting bar",
+    "logo": "https://is3-ssl.mzstatic.com/image/thumb/Purple112/v4/fb/cc/76/fbcc762c-9f12-3a57-b109-264656ad7d32/AppIcon-0-85-220-0-4-2x.png/1200x630bb.png",
+    "description": "Your meetings before your eyes! MeetingBar shows your calendar events in the status bar. Create and join meetings in one click.",
     "categories": ["productivity"]
   },
   {
     "id": 10,
-    "name": "alfred",
-    "logo": "https://pbs.twimg.com/profile_images/3441709541/9fb69dcff86624e62ecaaa58c363e15b_400x400.jpeg",
-    "description": "Alfred is an award-winning app for macOS which boosts your efficiency with hotkeys, keywords, text expansion and more.",
+    "name": "monitor control",
+    "logo": "https://raw.githubusercontent.com/MonitorControl/MonitorControl/main/.github/Icon-cropped.png",
+    "description": "Controls your external display brightness and volume and shows native OSD. Use menulet sliders or the keyboard, including native Apple keys!",
     "categories": ["productivity"]
   },
   {
     "id": 11,
-    "name": "alfred",
-    "logo": "https://pbs.twimg.com/profile_images/3441709541/9fb69dcff86624e62ecaaa58c363e15b_400x400.jpeg",
-    "description": "Alfred is an award-winning app for macOS which boosts your efficiency with hotkeys, keywords, text expansion and more.",
+    "name": "amethyst",
+    "logo": "https://pbs.twimg.com/profile_images/657586067529293824/Af24--yK_400x400.png",
+    "description": "A tiling window manager for macOS.",
     "categories": ["productivity"]
   },
   {
     "id": 12,
-    "name": "alfred",
-    "logo": "https://pbs.twimg.com/profile_images/3441709541/9fb69dcff86624e62ecaaa58c363e15b_400x400.jpeg",
-    "description": "Alfred is an award-winning app for macOS which boosts your efficiency with hotkeys, keywords, text expansion and more.",
-    "categories": ["productivity"]
+    "name": "sloth",
+    "logo": "https://raw.githubusercontent.com/sveinbjornt/Sloth/master/resources/sloth_icon.png",
+    "description": "Sloth is a native Mac app that shows all open files, directories, sockets, pipes, and devices in use by all running processes on your system. This makes it easy to inspect which apps are using which files, etc.",
+    "categories": ["system"]
   },
   {
     "id": 13,
-    "name": "alfred",
-    "logo": "https://pbs.twimg.com/profile_images/3441709541/9fb69dcff86624e62ecaaa58c363e15b_400x400.jpeg",
-    "description": "Alfred is an award-winning app for macOS which boosts your efficiency with hotkeys, keywords, text expansion and more.",
-    "categories": ["productivity"]
+    "name": "lyricsx",
+    "logo": "https://raw.githubusercontent.com/ddddxxx/LyricsX/master/docs/img/icon.png",
+    "description": "Ultimate lyrics app for macOS.",
+    "categories": ["music"]
   },
   {
     "id": 14,
-    "name": "alfred",
-    "logo": "https://pbs.twimg.com/profile_images/3441709541/9fb69dcff86624e62ecaaa58c363e15b_400x400.jpeg",
-    "description": "Alfred is an award-winning app for macOS which boosts your efficiency with hotkeys, keywords, text expansion and more.",
+    "name": "hush",
+    "logo": "https://user-images.githubusercontent.com/378279/102943111-6dfe0500-44b7-11eb-9e9a-1c77d53a04ab.png",
+    "description": "Block nags to accept cookies and privacy invasive tracking in Safari.",
     "categories": ["productivity"]
   },
   {
     "id": 15,
-    "name": "alfred",
-    "logo": "https://pbs.twimg.com/profile_images/3441709541/9fb69dcff86624e62ecaaa58c363e15b_400x400.jpeg",
-    "description": "Alfred is an award-winning app for macOS which boosts your efficiency with hotkeys, keywords, text expansion and more.",
+    "name": "colorsnapper",
+    "logo": "https://pbs.twimg.com/profile_images/596352682660474881/gOmUUuzV_400x400.png",
+    "description": "The color picker for Mac that makes it easy to inspect, adjust, organize, and export precise color values of any pixel on the screen.",
+    "categories": ["productivity"]
+  },
+  {
+    "id": 16,
+    "name": "raycast",
+    "logo": "https://pbs.twimg.com/profile_images/1450891458299703296/yJEV2j6W_400x400.jpg",
+    "description": "Raycast is a blazingly fast, totally extendable launcher. It lets you complete tasks, calculate, share common links, and much more.",
     "categories": ["productivity"]
   }
 ]

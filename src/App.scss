@@ -11,5 +11,13 @@
     width: 1400px;
     height: 100%;
     margin-top: 20px;
+
+    &.narrow {
+      margin-left: 320px;
+    }
+
+    &.wide {
+      margin-left: 80px;
+    }
   }
 }

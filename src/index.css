@@ -33,9 +33,8 @@ body {
 	line-height: 1;
 	font-family: 'Open Sans', sans-serif;
 	font-family: 'Source Sans Pro', sans-serif;
-	background: #0f0c29;  /* fallback for old browsers */
 	background-image: linear-gradient(135deg, #9796f0 10%, #FBC7D4 100%);
-	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 ol, ul {
 	list-style: none;

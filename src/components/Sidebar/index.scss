@@ -1,0 +1,76 @@
+.sidebar {
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  transition-duration: .2s;
+  transition-property: transform, width;
+  transition-timing-function: ease;
+  width: 320px;
+  z-index: 1000;
+  background-color: #2d3038;
+  color: white;
+
+  >div {
+    padding: 20px;
+  }
+
+  &-close {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    transition: .2s ease;
+    transition-property: transform, width;
+    transition-timing-function: ease;
+    width: 80px;
+    z-index: 1000;
+    background-color: #2d3038;
+    color: white;
+
+    >div {
+      padding: 20px;
+    }
+
+    .download,
+    .github {
+      display: flex;
+    }
+  }
+}
+
+.on-off {
+  cursor: pointer;
+}
+
+.download {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  .content {
+    padding-left: 14px;
+  }
+
+  &:hover {
+    background-color: $gray-4;
+  }
+}
+
+.github {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  .logo {
+    fill: #f2f2f2;
+  }
+
+  .content {
+    padding-left: 14px;
+  }
+
+  &:hover {
+    background-color: $gray-4;
+  }
+}

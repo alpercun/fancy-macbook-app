@@ -1,37 +1,50 @@
 .input {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  // align-items: center;
   padding: $spacer-2;
-  width: 600px;
-  height: 45px;
   left: 0;
   margin-top: $spacer-4;
   border-radius: $spacer-3;
   position: relative;
-  background-color: $white;
-  border: $spacer-2 solid $gray-5;
+  background-color: transparent;
+  border: 1px solid $white;
   position: relative;
+  flex-direction: column;
+
+  &.open {
+    width: 230px;
+    height: 405px;
+    transition: .2s ease;
+  }
+
+  &.close {
+    width: 32px;
+    height: 32px;
+    transition: .2s ease;
+    background-color: unset;
+    border: unset;
+  }
 
   .input-content {
     display: block;
     overflow: hidden;
-    white-space: nowrap;
+    flex-wrap: wrap;
     width: 90%;
     text-overflow: ellipsis;
-    font-size: 24px;
+    font-size: 20px;
     /* Safari */
     -webkit-user-select: none;
     /* Standard syntax */
     user-select: none;
+    color: $white;
   }
 
   .copy {
-    position: absolute;
-    right: 0;
-    width: 50px;
-    height: 100%;
-    border-radius: 0 $spacer-2 $spacer-2 0;
+    position: relative;
+    width: 100%;
+    height: 40px;
+    border-radius: $spacer-2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,13 +56,9 @@
     }
 
     &.disabled {
-      background-color: $gray-1;
+      background-color: #2d3038;
       cursor: not-allowed;
       transition: .4s ease;
-    }
-
-    svg {
-      fill: white;
     }
   }
 

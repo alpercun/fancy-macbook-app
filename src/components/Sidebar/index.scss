@@ -1,5 +1,4 @@
 .sidebar {
-  bottom: 0;
   height: 100%;
   left: 0;
   position: fixed;
@@ -36,6 +35,10 @@
     .github {
       display: flex;
     }
+  }
+
+  .input {
+    margin-left: 20px;
   }
 }
 

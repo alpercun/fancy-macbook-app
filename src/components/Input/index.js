@@ -1,8 +1,12 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { ReactComponent as Copy } from '../../assets/svg/copy.svg'
 
-const Input = ({ getData }) => {
+const Input = ({ getData, isOpen }) => {
   let result = ["brew install --cask"];
+
+  useEffect(() => {
+    console.log('isOpen', isOpen);
+  }, [isOpen]);
 
   const [showTooltip, setShowTooltip] = useState(false);
 
@@ -29,10 +33,10 @@ const Input = ({ getData }) => {
   }
 
   return (
-    <div className="input">
-      <div className="input-content">
+    <div className={`input ${isOpen ? 'open' : 'close'}`}>
+      {isOpen ? <div className="input-content">
         {result.join(' ')}
-      </div>
+      </div> : null}
       <div
         onClick={copyToClipboard}
         className={`copy ${isAdded() ? 'active' : 'disabled'}`}
@@ -42,7 +46,7 @@ const Input = ({ getData }) => {
           Copied
         </div>
       </div>
-    </div>
+    </div >
   )
 }
 

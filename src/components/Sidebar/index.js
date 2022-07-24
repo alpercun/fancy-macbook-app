@@ -3,25 +3,26 @@ import { ReactComponent as DownloadIcon } from '../../assets/svg/download.svg'
 import { ReactComponent as GithubIcon } from '../../assets/svg/github.svg'
 import { ReactComponent as DoubleArrowRight } from '../../assets/svg/double-arrow-right.svg'
 import { ReactComponent as DoubleArrowLeft } from '../../assets/svg/double-arrow-left.svg'
+import { Input } from '../Input'
 
-const Sidebar = ({ open, setOpen }) => {
+const Sidebar = ({ isOpen, setIsOpen, inputData }) => {
 
   return (
-    <div className={open ? 'sidebar' : 'sidebar-close'}>
+    <div className={isOpen ? 'sidebar' : 'sidebar-close'}>
       <div className="on-off"
-        onClick={() => setOpen(!open)}
+        onClick={() => setIsOpen(!isOpen)}
       >
-        {open ? <DoubleArrowLeft /> : <DoubleArrowRight />}
+        {isOpen ? <DoubleArrowLeft /> : <DoubleArrowRight />}
       </div>
       <div>
-        MBA
+        CMA
       </div>
       <div className="download">
         <div className="logo">
           <DownloadIcon />
         </div>
         {
-          open ? <div className="content">
+          isOpen ? <div className="content">
             Download
           </div> : null
         }
@@ -31,11 +32,12 @@ const Sidebar = ({ open, setOpen }) => {
           <GithubIcon />
         </div>
         {
-          open ? <div className="content">
+          isOpen ? <div className="content">
             Github
           </div> : null
         }
       </div>
+      <Input isOpen={isOpen} getData={inputData} />
     </div>
   )
 }

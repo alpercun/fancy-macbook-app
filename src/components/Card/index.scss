@@ -6,6 +6,9 @@
   border-radius: $spacer-4;
   transition: 0.3s;
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 
   .header {
     display: flex;
@@ -31,6 +34,7 @@
 
   .body {
     color: $gray-1;
+    line-height: 140%;
   }
 
   .categories {

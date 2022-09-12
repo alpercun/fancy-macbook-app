@@ -1,0 +1,17 @@
+.scroll-to-top {
+  background: rgba(83, 83, 83, 0.25);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 50px;
+  height: 50px;
+  border-radius: 25%;
+  z-index: 1;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  transition: opacity 1s ease-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}

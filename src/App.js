@@ -3,6 +3,7 @@ import './App.scss'
 import { CardList } from './components/CardList';
 import { Search } from './components/Search';
 import { Sidebar } from './components/Sidebar';
+import { ScrollToTop } from './components/ScrollToTop';
 
 const App = () => {
   const [inputData, setInputData] = useState([]);
@@ -24,6 +25,7 @@ const App = () => {
             setFilteredKeyword={filteredKeyword}
           />
         </div>
+        <ScrollToTop />
       </div>
     </div>
   );

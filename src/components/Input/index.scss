@@ -26,7 +26,7 @@
     border: unset;
 
     &:hover {
-      background-color: $gray-4;
+      background: rgba(23, 23, 23, 0.15);
       transition: none;
       border-radius: 0;
 
@@ -35,20 +35,14 @@
         cursor: pointer;
 
         &.disabled {
-          background-color: $gray-4;
           transition: none;
           cursor: not-allowed;
         }
 
         &.active {
-          background-color: $gray-4;
           transition: none;
           cursor: pointer !important;
         }
-      }
-
-      .app-count {
-        background-color: $gray-4;
       }
     }
   }
@@ -87,7 +81,6 @@
     }
 
     &.disabled {
-      background-color: #2d3038;
       cursor: not-allowed;
       // transition: .4s ease;
     }
@@ -97,7 +90,7 @@
       right: 0;
       background-color: unset;
       position: absolute;
-      background-color: #2d3038;
+      background: rgba(252, 193, 0, 0.856);
       border-radius: 50%;
       padding: $spacer-3;
       height: 1px;

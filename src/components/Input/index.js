@@ -33,14 +33,17 @@ const Input = ({ getData, isOpen }) => {
   }
 
   return (
-    <div className={`input ${isOpen ? 'open' : 'close'}`}>
-      {isOpen ? <div className="input-content">
+    <div className={`input ${isOpen && isAdded() ? 'sidebar-expand' : isOpen ? 'open' : 'close'}`}>
+      {isOpen && <div className="input-content">
         {result.join(' ')}
-      </div> : null}
+      </div>}
       <div
         onClick={copyToClipboard}
-        className={`copy ${isAdded() ? 'active' : 'disabled'}`}
+        className={`copy ${!isOpen && isAdded() ? 'background-disabled' : isAdded() ? 'active' : 'disabled'}`}
       >
+        {result.length >= 2 && !isOpen && <div className="app-count">
+          {result.length - 1}
+        </div>}
         <Copy />
         <div className={`tooltip ${showTooltip ? 'active' : `disabled`}`}>
           Copied

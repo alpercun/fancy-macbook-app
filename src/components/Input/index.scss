@@ -4,7 +4,7 @@
   // align-items: center;
   padding: $spacer-2;
   left: 0;
-  margin-top: $spacer-4;
+  // margin-top: $spacer-4;
   border-radius: $spacer-3;
   position: relative;
   background-color: transparent;
@@ -12,18 +12,45 @@
   position: relative;
   flex-direction: column;
 
-  &.open {
+  &.open,
+  &.sidebar-expand {
     width: 230px;
-    height: 405px;
+    min-height: 405px;
     transition: .2s ease;
   }
 
   &.close {
-    width: 32px;
     height: 32px;
-    transition: .2s ease;
+    transition: none;
     background-color: unset;
     border: unset;
+
+    &:hover {
+      background-color: $gray-4;
+      transition: none;
+      border-radius: 0;
+
+      .copy {
+        transition: none;
+        cursor: pointer;
+
+        &.disabled {
+          background-color: $gray-4;
+          transition: none;
+          cursor: not-allowed;
+        }
+
+        &.active {
+          background-color: $gray-4;
+          transition: none;
+          cursor: pointer !important;
+        }
+      }
+
+      .app-count {
+        background-color: $gray-4;
+      }
+    }
   }
 
   .input-content {
@@ -49,16 +76,35 @@
     justify-content: center;
     align-items: center;
 
+    &.background-disabled {
+      background-color: none;
+    }
+
     &.active {
       background-color: $green-2;
       cursor: pointer;
-      transition: .4s ease;
+      // transition: .4s ease;
     }
 
     &.disabled {
       background-color: #2d3038;
       cursor: not-allowed;
-      transition: .4s ease;
+      // transition: .4s ease;
+    }
+
+    .app-count {
+      top: 0;
+      right: 0;
+      background-color: unset;
+      position: absolute;
+      background-color: #2d3038;
+      border-radius: 50%;
+      padding: $spacer-3;
+      height: 1px;
+      width: 1px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 

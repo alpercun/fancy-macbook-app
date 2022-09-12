@@ -7,7 +7,9 @@
   transition-timing-function: ease;
   width: 320px;
   z-index: 1000;
-  background-color: #2d3038;
+  background: rgba(83, 83, 83, 0.25);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   color: white;
 
   >div {
@@ -24,7 +26,9 @@
     transition-timing-function: ease;
     width: 80px;
     z-index: 1000;
-    background-color: #2d3038;
+    background: rgba(83, 83, 83, 0.25);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
     color: white;
 
     >div {
@@ -56,7 +60,7 @@
   }
 
   &:hover {
-    background-color: $gray-4;
+    background: rgba(23, 23, 23, 0.15);
   }
 }
 
@@ -74,6 +78,6 @@
   }
 
   &:hover {
-    background-color: $gray-4;
+    background: rgba(23, 23, 23, 0.15);
   }
 }

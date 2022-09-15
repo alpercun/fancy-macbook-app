@@ -2,9 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { ReactComponent as SearchIcon } from '../../assets/svg/search.svg'
 import { ReactComponent as CloseIcon } from '../../assets/svg/cross.svg'
 
-
-
-const Search = ({ setFilteredKeyword }) => {
+const Search = ({ setFilteredKeyword, addSearchItem }) => {
   const [search, setSearch] = useState("");
 
   const handleSearchChange = (e) => {
@@ -13,6 +11,14 @@ const Search = ({ setFilteredKeyword }) => {
 
   const handleClickCloseIcon = () => {
     setSearch("");
+  }
+
+  const handleClickEnter = (e) => {
+    if (e.key === "Enter") {
+      console.log('handle click enter')
+      addSearchItem(e.target.value);
+      setSearch("");
+    }
   }
 
   useEffect(() => {
@@ -29,6 +35,7 @@ const Search = ({ setFilteredKeyword }) => {
         placeholder="Search..."
         value={search}
         onChange={handleSearchChange}
+        onKeyDown={handleClickEnter}
       />
       {search.length > 0 &&
         <CloseIcon

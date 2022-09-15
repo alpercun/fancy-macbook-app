@@ -1,0 +1,15 @@
+.search-item {
+  background: rgba(83, 83, 83, 0.25);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 8px 12px;
+  border-radius: 8px;
+
+  .close-icon {
+    padding-left: 10px;
+    fill: $gray-4;
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+  }
+}

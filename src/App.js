@@ -44,7 +44,8 @@ const App = () => {
           />
           <CardList
             setData={setData}
-            setFilteredKeyword={filteredKeyword}
+            searchItems={searchItems}
+            filteredKeyword={filteredKeyword}
           />
         </div>
         <ScrollToTop />

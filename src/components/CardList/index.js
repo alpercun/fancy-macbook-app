@@ -5,6 +5,7 @@ import db from '../../assets/db.json'
 const CardList = ({ setData, filteredKeyword, searchItems }) => {
   const [inputItems, setInputItems] = useState([]);
   const [filteredData, setFilteredData] = useState(db);
+
   useEffect(() => {
     setData(inputItems);
   });
@@ -47,8 +48,10 @@ const CardList = ({ setData, filteredKeyword, searchItems }) => {
   }, [searchItems])
 
   useEffect(() => {
-    console.log(filteredData)
-  }, [filteredData])
+    if (filteredKeyword.length === 0 && searchItems.length === 0) {
+      setFilteredData(db);
+    }
+  }, [filteredKeyword, searchItems])
 
 
   const isItemAdded = (item) => inputItems.some(inputItem => inputItem.id === item.id);

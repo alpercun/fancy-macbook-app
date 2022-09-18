@@ -17,13 +17,22 @@
     width: 230px;
     min-height: 405px;
     transition: .2s ease;
+
+    .copy {
+      justify-content: center;
+    }
   }
 
   &.close {
     height: 32px;
     transition: none;
     background-color: unset;
+    cursor: pointer;
     border: unset;
+
+    &.disabled {
+      cursor: not-allowed;
+    }
 
     &:hover {
       background: rgba(23, 23, 23, 0.15);
@@ -67,7 +76,7 @@
     height: 40px;
     border-radius: $spacer-2;
     display: flex;
-    justify-content: center;
+    // justify-content: center;
     align-items: center;
 
     &.background-disabled {
@@ -87,7 +96,7 @@
 
     .app-count {
       top: 0;
-      right: 0;
+      right: $spacer-2;
       background-color: unset;
       position: absolute;
       background: rgba(252, 193, 0, 0.856);

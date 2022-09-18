@@ -15,7 +15,6 @@
   }
 
   &:not(:first-child) {
-    background-color: red;
     margin-left: $spacer-4;
   }
 }

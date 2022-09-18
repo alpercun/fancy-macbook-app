@@ -1,12 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { ReactComponent as Copy } from '../../assets/svg/copy.svg'
 
 const Input = ({ getData, isOpen }) => {
   let result = ["brew install --cask"];
-
-  useEffect(() => {
-    console.log('isOpen', isOpen);
-  }, [isOpen]);
 
   const [showTooltip, setShowTooltip] = useState(false);
 

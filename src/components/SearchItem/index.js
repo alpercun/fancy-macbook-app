@@ -2,7 +2,6 @@ import { ReactComponent as CloseIcon } from '../../assets/svg/cross.svg'
 
 const SearchItem = ({ item, removeSearchItem }) => {
   const handleClickCloseIcon = () => {
-    console.log('close icon clicked', item)
     removeSearchItem(item)
   }
 

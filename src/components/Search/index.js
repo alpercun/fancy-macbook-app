@@ -15,7 +15,6 @@ const Search = ({ setFilteredKeyword, addSearchItem }) => {
 
   const handleClickEnter = (e) => {
     if (e.key === "Enter") {
-      console.log('handle click enter')
       addSearchItem(e.target.value);
       setSearch("");
     }

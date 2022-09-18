@@ -19,7 +19,6 @@ const CardList = ({ setData, filteredKeyword, searchItems }) => {
   }
 
   useEffect(() => {
-    console.log('filteredKeyword CHANGE')
     if (filteredKeyword.length > 0) {
       const data = db.filter(
         item => {
@@ -33,7 +32,6 @@ const CardList = ({ setData, filteredKeyword, searchItems }) => {
   }, [filteredKeyword])
 
   useEffect(() => {
-    console.log('searchItems CHANGE')
     if (searchItems.length > 0) {
       setFilteredData(
         searchItems.map(searchItem => {

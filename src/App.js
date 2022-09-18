@@ -38,10 +38,12 @@ const App = () => {
             setSearchItems={setSearchItems}
             addSearchItem={addSearchItem}
           />
-          <SearchItemList
-            searchItems={searchItems}
-            removeSearchItem={removeSearchItem}
-          />
+          <div className="search-item-list-wrapper">
+            <SearchItemList
+              searchItems={searchItems}
+              removeSearchItem={removeSearchItem}
+            />
+          </div>
           <CardList
             setData={setData}
             searchItems={searchItems}

@@ -12,6 +12,10 @@
     height: 100%;
     margin-top: 20px;
 
+    .search-item-list-wrapper {
+      margin-top: $spacer-3;
+    }
+
     &.narrow {
       margin-left: 320px;
     }

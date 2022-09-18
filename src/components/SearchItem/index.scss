@@ -13,4 +13,9 @@
     height: 12px;
     cursor: pointer;
   }
+
+  &:not(:first-child) {
+    background-color: red;
+    margin-left: $spacer-4;
+  }
 }

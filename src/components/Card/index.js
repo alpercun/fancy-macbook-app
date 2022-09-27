@@ -16,6 +16,7 @@ const Card = ({ data, isAdded, addToInput, removeFromInput }) => {
       className="card"
       onMouseEnter={showButton}
       onMouseLeave={hideButton}
+      onClick={isAdded ? removeFromInput : addToInput}
     >
       <div className="header">
         <div className="logo">

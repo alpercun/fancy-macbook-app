@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { ReactComponent as DownloadIcon } from '../../assets/svg/download.svg'
 import { ReactComponent as GithubIcon } from '../../assets/svg/github.svg'
 import { ReactComponent as DoubleArrowRight } from '../../assets/svg/double-arrow-right.svg'
@@ -6,6 +6,15 @@ import { ReactComponent as DoubleArrowLeft } from '../../assets/svg/double-arrow
 import { Input } from '../Input'
 
 const Sidebar = ({ isOpen, setIsOpen, inputData }) => {
+  useEffect(() => {
+    if (inputData.length > 0) {
+      setIsOpen(true);
+    }
+
+    if (inputData.length === 0) {
+      setIsOpen(false);
+    }
+  })
 
   return (
     <div className={isOpen ? 'sidebar' : 'sidebar-close'}>

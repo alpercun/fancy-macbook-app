@@ -1,21 +1,12 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { ReactComponent as DownloadIcon } from '../../assets/svg/download.svg'
 import { ReactComponent as GithubIcon } from '../../assets/svg/github.svg'
 import { ReactComponent as DoubleArrowRight } from '../../assets/svg/double-arrow-right.svg'
 import { ReactComponent as DoubleArrowLeft } from '../../assets/svg/double-arrow-left.svg'
 import { Input } from '../Input'
+import { AddApp } from '../AddApp'
 
 const Sidebar = ({ isOpen, setIsOpen, inputData }) => {
-  useEffect(() => {
-    if (inputData.length > 0) {
-      setIsOpen(true);
-    }
-
-    if (inputData.length === 0) {
-      setIsOpen(false);
-    }
-  })
-
   return (
     <div className={isOpen ? 'sidebar' : 'sidebar-close'}>
       <div className="on-off"
@@ -46,6 +37,7 @@ const Sidebar = ({ isOpen, setIsOpen, inputData }) => {
           </div> : null
         }
       </div>
+      <AddApp isOpen={isOpen} />
       <Input isOpen={isOpen} getData={inputData} />
     </div>
   )

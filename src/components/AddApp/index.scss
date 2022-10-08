@@ -1,0 +1,16 @@
+.add {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 20px;
+  text-decoration: none;
+
+  .content {
+    padding-left: 14px;
+    color: $white;
+  }
+
+  &:hover {
+    background: rgba(23, 23, 23, 0.15);
+  }
+}

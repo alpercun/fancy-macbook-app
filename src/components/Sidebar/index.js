@@ -22,9 +22,9 @@ const Sidebar = ({ isOpen, setIsOpen, inputData }) => {
           <DownloadIcon />
         </div>
         {
-          isOpen ? <div className="content">
+          isOpen && <div className="content">
             Download
-          </div> : null
+          </div>
         }
       </div>
       <div className="github">
@@ -32,9 +32,9 @@ const Sidebar = ({ isOpen, setIsOpen, inputData }) => {
           <GithubIcon />
         </div>
         {
-          isOpen ? <div className="content">
+          isOpen && <div className="content">
             Github
-          </div> : null
+          </div>
         }
       </div>
       <AddApp isOpen={isOpen} />

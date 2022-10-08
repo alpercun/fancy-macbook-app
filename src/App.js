@@ -17,7 +17,7 @@ const App = () => {
   }
 
   const addSearchItem = (item) => {
-    setSearchItems([...searchItems, item]);
+    setSearchItems([...new Set([...searchItems, item])]);
   }
 
   const removeSearchItem = (item) => {

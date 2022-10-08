@@ -8,7 +8,8 @@ const CardList = ({ setData, filteredKeyword, searchItems }) => {
 
   useEffect(() => {
     setData(inputItems);
-  });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [inputItems]);
 
   const doesItInclude = (item, searchItem) => {
     if (typeof item === 'string') {

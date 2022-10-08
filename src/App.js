@@ -14,6 +14,11 @@ const App = () => {
 
   const setData = (apps) => {
     setInputData(apps);
+    setIsOpen(true);
+
+    if (apps.length === 0) {
+      setIsOpen(false);
+    }
   }
 
   const addSearchItem = (item) => {

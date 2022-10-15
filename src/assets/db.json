@@ -1,5 +1,4 @@
-[
-  {
+[{
     "id": 1,
     "name": "fig",
     "logo": "https://pbs.twimg.com/profile_images/1319410808925741056/weExhTBA_400x400.jpg",
@@ -44,7 +43,7 @@
   {
     "id": 7,
     "name": "rectangle",
-    "logo": "https://rectangleapp.com/images/mac512pts1x.png",
+    "logo": "https://rectangleapp.com/assets/pro/images/mac512pts1x.png",
     "description": "Move and resize windows in macOS using keyboard shortcuts or snap areas.",
     "categories": ["productivity"]
   },

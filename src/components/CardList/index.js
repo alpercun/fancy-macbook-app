@@ -35,14 +35,13 @@ const CardList = ({ setData, filteredKeyword, searchItems }) => {
   useEffect(() => {
     if (searchItems.length > 0) {
       setFilteredData(
-        searchItems.map(searchItem => {
+        [...new Set(searchItems.map(searchItem => {
           return db.filter(item => {
             const { name, categories } = item;
 
             return doesItInclude(name, searchItem) || doesItInclude(categories, searchItem)
           });
-        }).flat()
-      )
+        }).flat())])
     }
   }, [searchItems])
 

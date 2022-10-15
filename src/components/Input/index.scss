@@ -74,7 +74,6 @@
     height: 40px;
     border-radius: $spacer-2;
     display: flex;
-    // justify-content: center;
     align-items: center;
 
     &.background-disabled {
@@ -84,11 +83,13 @@
     &.active {
       background-color: $green-2;
       cursor: pointer;
+      justify-content: space-around;
       // transition: .4s ease;
     }
 
     &.disabled {
       cursor: not-allowed;
+      justify-content: space-around;
       // transition: .4s ease;
     }
 

@@ -40,6 +40,7 @@ const Input = ({ getData, isOpen }) => {
         {result.length >= 2 && !isOpen && <div className="app-count">
           {result.length - 1}
         </div>}
+        {isOpen && 'Copy to clipboard'}
         <Copy />
         <div className={`tooltip ${showTooltip ? 'active' : `disabled`}`}>
           Copied

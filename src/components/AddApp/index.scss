@@ -8,6 +8,7 @@
   .content {
     padding-left: 14px;
     color: $white;
+    flex-shrink: 0;
   }
 
   &:hover {

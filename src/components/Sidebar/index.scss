@@ -1,83 +1,114 @@
+$delay: .5s;
+$timing: 3s;
+
 .sidebar {
   height: 100%;
   left: 0;
   position: fixed;
-  transition-duration: .2s;
+  transition: .2s ease;
   transition-property: transform, width;
   transition-timing-function: ease;
-  width: 320px;
-  z-index: 1000;
   background: rgba(83, 83, 83, 0.25);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
   color: white;
 
-  >div {
-    padding: 20px;
-  }
-
-  &-close {
-    bottom: 0;
+  .item-wrapper {
+    display: flex;
+    flex-direction: column;
     height: 100%;
-    left: 0;
-    position: fixed;
-    transition: .2s ease;
-    transition-property: transform, width;
-    transition-timing-function: ease;
+    justify-content: space-between;
+  }
+
+  .download,
+  .github {
+    display: flex;
+    align-items: center;
+  }
+
+  .download,
+  .github {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    .logo {
+      fill: #f2f2f2;
+    }
+
+    .content {
+      padding-left: 14px;
+    }
+
+    &:hover {
+      background: rgba(23, 23, 23, 0.15);
+    }
+  }
+
+  .item {
+    padding: 20px
+  }
+
+  &.open {
+    width: 320px;
+  }
+
+  &.close {
     width: 80px;
-    z-index: 1000;
-    background: rgba(83, 83, 83, 0.25);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    color: white;
-
-    >div {
-      padding: 20px;
-    }
-
-    .download,
-    .github {
-      display: flex;
-    }
   }
 
-  .input {
-    margin-left: 20px;
+  .on-off {
+    cursor: pointer;
   }
 }
 
-.on-off {
-  cursor: pointer;
+.bar {
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  height: 120px;
+  box-shadow: 1px 1px 2px 1px rgb(92 103 199);
+  border-radius: 50%;
+  transition: all $timing linear;
+  -webkit-animation-duration: $timing;
+  animation-duration: $timing;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
 }
 
-.download {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
+.bar.delay {
+  animation-delay: $delay;
+  -webkit-animation-delay: $delay;
+}
 
-  .content {
-    padding-left: 14px;
+.right {
+  top: 0;
+  right: -1px;
+}
+
+@-webkit-keyframes v-move {
+  0% {
+    top: 0;
   }
 
-  &:hover {
-    background: rgba(23, 23, 23, 0.15);
+  100% {
+    top: 100vh;
   }
 }
 
-.github {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-
-  .logo {
-    fill: #f2f2f2;
+@keyframes v-move {
+  0% {
+    top: 0;
   }
 
-  .content {
-    padding-left: 14px;
-  }
+  100% {
+    top: 100vh;
 
-  &:hover {
-    background: rgba(23, 23, 23, 0.15);
   }
+}
+
+.right {
+  -webkit-animation-name: v-move;
+  animation-name: v-move;
 }

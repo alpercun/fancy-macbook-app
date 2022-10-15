@@ -29,7 +29,7 @@ const Input = ({ getData, isOpen }) => {
   }
 
   return (
-    <div className={`input ${isOpen && isAdded() ? 'sidebar-expand' : isOpen ? 'open' : `close ${!isAdded() && 'disabled'}`}`}>
+    <div className={`input item ${isOpen && isAdded() ? 'sidebar-expand' : isOpen ? 'open' : `close ${!isAdded() && 'disabled'}`}`}>
       {isOpen && <div className="input-content">
         {result.join(' ')}
       </div>}

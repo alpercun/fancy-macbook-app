@@ -1,22 +1,21 @@
 .input {
   display: flex;
   justify-content: space-between;
-  // align-items: center;
   padding: $spacer-2;
   left: 0;
-  // margin-top: $spacer-4;
   border-radius: $spacer-3;
   position: relative;
   background-color: transparent;
-  border: 1px solid $white;
   position: relative;
   flex-direction: column;
 
   &.open,
   &.sidebar-expand {
     width: 230px;
-    min-height: 405px;
+    height: 400px;
+    box-shadow: 0px 0px 0px 0.2px $white;
     transition: .2s ease;
+    margin-left: 20px;
 
     .copy {
       justify-content: center;

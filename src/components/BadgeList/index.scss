@@ -1,0 +1,49 @@
+.badge-list {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.badge {
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  flex-shrink: 0;
+
+  &:hover {
+    color: #908dd6;
+  }
+
+  &:not(:last-child) {
+    margin-right: $spacer-4;
+  }
+}
+
+.icon {
+  position: relative;
+  cursor: pointer;
+  fill: #f2f2f2;
+
+  &:hover {
+    // background: rgba(83, 83, 83, 0.25);
+    border-radius: $spacer-3;
+  }
+}
+
+.scroll-badge-content {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  max-width: 100%;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+
+  &::-webkit-scrollbar {
+    background: transparent;
+    /* make scrollbar transparent */
+    -webkit-appearance: none;
+    width: 0;
+    height: 0;
+  }
+}

@@ -1,8 +1,12 @@
 import React from 'react'
 
-const Badge = ({ category }) => {
+const Badge = ({ category, addSearchCategory }) => {
+  const handleClickCategory = () => {
+    addSearchCategory(category)
+  }
+
   return (
-    <div className="badge">
+    <div onClick={handleClickCategory} className="badge">
       {category}
     </div>
   )

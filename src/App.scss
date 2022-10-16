@@ -29,4 +29,12 @@
   &-wrapper {
     background: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(120, 119, 198, 0.3), rgba(255, 255, 255, 0));
   }
+
+  .badge-list {
+    margin-top: $spacer-4;
+  }
+
+  .search-item-list-wrapper {
+    height: 32px;
+  }
 }

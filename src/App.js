@@ -5,6 +5,7 @@ import { Search } from './components/Search';
 import { Sidebar } from './components/Sidebar';
 import { SearchItemList } from './components/SearchItemList';
 import { ScrollToTop } from './components/ScrollToTop';
+import { BadgeList } from './components/BadgeList';
 
 const App = () => {
   const [inputData, setInputData] = useState([]);
@@ -29,6 +30,10 @@ const App = () => {
     setSearchItems(searchItems.filter(searchItem => searchItem !== item));
   };
 
+  const addSearchCategory = (category) => {
+    setSearchItems([...new Set([...searchItems, category])]);
+  }
+
   return (
     <div className="container-wrapper">
       <Sidebar
@@ -43,6 +48,7 @@ const App = () => {
             setSearchItems={setSearchItems}
             addSearchItem={addSearchItem}
           />
+          <BadgeList addSearchCategory={addSearchCategory} />
           <div className="search-item-list-wrapper">
             <SearchItemList
               searchItems={searchItems}

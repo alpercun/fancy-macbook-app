@@ -13,12 +13,17 @@
   &.sidebar-expand {
     width: 230px;
     height: 400px;
+    background-color: rgb(40, 44, 52);
     box-shadow: 0px 0px 0px 0.2px $white;
     transition: .2s ease;
     margin-left: 20px;
 
     .copy {
       justify-content: center;
+    }
+
+    .copy {
+      background: rgba(128, 128, 128, 0.25);
     }
   }
 
@@ -60,11 +65,12 @@
     flex-wrap: wrap;
     width: 90%;
     text-overflow: ellipsis;
-    font-size: 20px;
+    font-size: 14px;
     /* Safari */
     -webkit-user-select: none;
     /* Standard syntax */
     user-select: none;
+    font-family: monospace;
     color: $white;
   }
 
@@ -84,13 +90,12 @@
       background-color: $green-2;
       cursor: pointer;
       justify-content: space-around;
-      // transition: .4s ease;
     }
 
     &.disabled {
       cursor: not-allowed;
       justify-content: space-around;
-      // transition: .4s ease;
+      color: $gray-1
     }
 
     .app-count {
@@ -98,7 +103,8 @@
       right: $spacer-2;
       background-color: unset;
       position: absolute;
-      background: rgba(252, 193, 0, 0.856);
+      color: $white;
+      background: green;
       border-radius: 50%;
       padding: $spacer-3;
       height: 1px;

@@ -43,6 +43,7 @@ const BadgeList = ({ addSearchCategory }) => {
       {scrollX !== 0 && (
         <div className='icon'>
           <ExpandLeftArrow onClick={() => slide(-75)} />
+          <div className='icon-ghost-left' />
         </div>
       )}
       <div ref={scrl} onScroll={scrollCheck} className='scroll-badge-content'>
@@ -56,6 +57,7 @@ const BadgeList = ({ addSearchCategory }) => {
       {!scrolEnd && (
         <>
           <div className='icon'>
+            <div className='icon-ghost-right' />
             <ExpandRightArrow onClick={() => slide(+75)} />
           </div>
         </>

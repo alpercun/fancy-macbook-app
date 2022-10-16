@@ -26,8 +26,24 @@
   fill: #f2f2f2;
 
   &:hover {
-    // background: rgba(83, 83, 83, 0.25);
     border-radius: $spacer-3;
+  }
+
+  &-ghost-right {
+    position: absolute;
+    background: linear-gradient(to left, rgba(14, 21, 34, 0.9) 20%, rgba(95, 84, 84, 0) 80%);
+    width: 30px;
+    right: 30px;
+    height: 32px;
+  }
+
+  &-ghost-left {
+    position: absolute;
+    background: linear-gradient(to right, rgba(16, 20, 34, 0.9) 20%, rgba(255, 255, 255, 0) 80%);
+    width: 30px;
+    left: 30px;
+    top: 0;
+    height: 32px;
   }
 }
 

@@ -27,7 +27,7 @@
 
     .name {
       margin-left: 10px;
-      font-size: 20px;
+      font-size: 22px;
       font-weight: bold;
       color: $gray-3;
     }
@@ -49,6 +49,12 @@
     >* {
       margin-right: $spacer-2;
       margin-bottom: $spacer-2;
+    }
+
+    .badge {
+      &:hover {
+        color: $white;
+      }
     }
   }
 

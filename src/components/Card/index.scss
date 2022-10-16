@@ -1,10 +1,9 @@
 .card {
   width: 300px;
   height: 250px;
-  // background: radial-gradient(circle at top, rgba(41, 41, 46, 1) 0%, rgba(25, 25, 28, 1) 100%);
   background: linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.05) 100%);
   padding: 24px;
-  border-radius: $spacer-4;
+  border-radius: $spacer-5;
   transition: 0.3s;
   position: relative;
   display: flex;

@@ -5,11 +5,11 @@
   background: rgba(83, 83, 83, 0.25);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 24px;
-  padding: 20px;
+  border-radius: $spacer-4;
+  padding: 8px;
   position: relative;
   justify-content: center;
-  width: 240px;
+  width: 300px;
   align-items: center;
 
   input {
@@ -18,7 +18,7 @@
     color: $white;
     outline: none;
     font-size: 20px;
-    margin: 0 12px 0 12px;
+    margin: 0 $spacer-2;
     width: 100%;
 
     &::placeholder {
@@ -27,17 +27,15 @@
   }
 
   .search-icon {
-    transform: rotate(90deg);
     fill: $white;
-    width: 20px;
-    height: 20px;
+    width: 32px;
+    height: 32px;
     cursor: pointer;
   }
 
   .close-icon {
-    fill: $white;
-    width: 16px;
-    height: 16px;
+    width: 32px;
+    height: 32px;
     cursor: pointer;
   }
 }

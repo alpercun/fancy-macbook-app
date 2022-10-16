@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { ReactComponent as SearchIcon } from '../../assets/svg/search.svg'
-import { ReactComponent as CloseIcon } from '../../assets/svg/cross.svg'
+import { ReactComponent as CloseIcon } from '../../assets/svg/close.svg'
 
 const Search = ({ setFilteredKeyword, addSearchItem }) => {
   const [search, setSearch] = useState("");

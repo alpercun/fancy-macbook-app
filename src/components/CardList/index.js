@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Card } from '../Card'
 import db from '../../assets/db.json'
+import { AddApp } from '../AddApp'
 
 const CardList = ({ setData, filteredKeyword, searchItems }) => {
   const [inputItems, setInputItems] = useState([]);
@@ -77,6 +78,15 @@ const CardList = ({ setData, filteredKeyword, searchItems }) => {
           removeFromInput={() => removeFromInput(item)}
         />
       ))}
+
+      {filteredData.length === 0 && (
+        <div className="empty-state">
+          <span>
+            The application you were looking for was not found.<br /> Can you add this app?
+          </span>
+          <AddApp />
+        </div>
+      )}
     </div>
   )
 }

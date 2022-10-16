@@ -8,3 +8,26 @@
     margin: $spacer-4;
   }
 }
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: calc(100vh - 300px);
+  color: white;
+
+  span {
+    line-height: 1.6;
+  }
+
+  .add {
+    margin-top: $spacer-4;
+
+    &:hover {
+      background-color: rgba(83, 83, 83, 0.25);
+      border-radius: $spacer-4;
+    }
+  }
+}

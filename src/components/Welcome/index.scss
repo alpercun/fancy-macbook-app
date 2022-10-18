@@ -1,0 +1,54 @@
+.welcome {
+  height: 100vh;
+  color: white;
+  position: relative;
+
+  .application {
+    width: 60px;
+    transform: translate3d(0, 0, 0);
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: float-translate;
+  }
+
+  @for $i from 1 through 12 {
+    .app-#{$i} {
+      animation-delay: 0.5s * $i;
+    }
+  }
+
+  .app-wrapper-1,
+  .app-wrapper-2,
+  .app-wrapper-3,
+  .app-wrapper-4 {
+    display: flex;
+    justify-content: space-evenly;
+
+    >svg {
+      padding: 10px 20px;
+    }
+  }
+
+  .app-wrapper-3 {
+    padding: 0 30px;
+  }
+}
+
+@keyframes float-translate {
+  0% {
+    transform: translate(5px, 0px);
+  }
+
+  50% {
+    transform: translate(0, 15px);
+  }
+
+  100% {
+    transform: translate(5px, 0px);
+  }
+}

@@ -6,6 +6,7 @@ import { Sidebar } from './components/Sidebar';
 import { SearchItemList } from './components/SearchItemList';
 import { ScrollToTop } from './components/ScrollToTop';
 import { BadgeList } from './components/BadgeList';
+import { Welcome } from './components/Welcome';
 
 const App = () => {
   const [inputData, setInputData] = useState([]);
@@ -43,6 +44,7 @@ const App = () => {
       />
       <div className="container">
         <div className={`app ${isOpen ? `narrow` : `wide`}`}>
+          <Welcome />
           <Search
             setFilteredKeyword={setFilteredKeyword}
             setSearchItems={setSearchItems}

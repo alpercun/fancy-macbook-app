@@ -1,0 +1,80 @@
+.terminal {
+  width: 900px;
+  height: 600px;
+  background-color: rgba(81, 71, 79, 17%);
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+
+  &-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    background-color: black;
+
+    &-action-buttons {
+      display: flex;
+      margin-left: 24px;
+
+      >div:not(:first-child) {
+        margin-left: 8px;
+      }
+
+      .red {
+        width: 16px;
+        height: 16px;
+        background-color: #FF5B68;
+        border-radius: 50%;
+      }
+
+      .yellow {
+        width: 16px;
+        height: 16px;
+        background-color: #FFBE24;
+        border-radius: 50%;
+      }
+
+      .green {
+        width: 16px;
+        height: 16px;
+        background-color: #1ACC30;
+        border-radius: 50%;
+      }
+    }
+
+    &-window {
+      margin-left: 24px;
+      background-color: rgba(87, 97, 94, 21%);
+      height: 100%;
+      display: flex;
+      font-size: 14px;
+      justify-content: center;
+      align-items: center;
+      padding: 0 $spacer-4;
+    }
+  }
+
+  &-body {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 40px;
+    padding: $spacer-4;
+    color: white;
+
+    &-content {
+      display: flex;
+      align-items: center;
+
+      .home {
+        color: green;
+        font-size: 20px;
+        font-weight: bold;
+        margin-right: 12px;
+      }
+    }
+  }
+}

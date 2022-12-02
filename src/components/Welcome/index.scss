@@ -36,19 +36,33 @@
 
   .app-wrapper-3 {
     padding: 0 30px;
+    margin-bottom: 60px;
+  }
+
+  &-header {
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 36px;
+  }
+
+  &-description {
+    font-size: 36px;
+    color: #ABAAAA;
+    text-align: center;
+    margin-bottom: 36px;
   }
 }
 
 @keyframes float-translate {
   0% {
-    transform: translate(5px, 0px);
+    transform: translate(0px, 0px);
   }
 
   50% {
-    transform: translate(0, 15px);
+    transform: translate(0px, 15px);
   }
 
   100% {
-    transform: translate(5px, 0px);
+    transform: translate(0px, 0px);
   }
 }

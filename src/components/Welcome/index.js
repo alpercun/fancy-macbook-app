@@ -10,6 +10,7 @@ import { ReactComponent as Img9 } from '../../assets/image/img-9.svg'
 import { ReactComponent as Img10 } from '../../assets/image/img-10.svg'
 import { ReactComponent as Img11 } from '../../assets/image/img-11.svg'
 import { ReactComponent as Img12 } from '../../assets/image/img-12.svg'
+import { Terminal } from '../Terminal'
 
 
 const Welcome = () => {
@@ -35,7 +36,10 @@ const Welcome = () => {
         <Img11 className='application app-11' />
         <Img12 className='application app-12' />
       </div>
-    </div>
+      <div className='welcome-header'>Find apps that suit you</div><br />
+      <div className='welcome-description'>Download the best apps for you to customize<br /> your Mac.</div>
+      <Terminal />
+    </div >
   )
 }
 

@@ -1,16 +1,11 @@
 import React, { useEffect, useState } from 'react'
-import { Card } from '../Card'
 import db from '../../assets/db.json'
 import { AddApp } from '../AddApp'
+import { Card } from '../Card'
 
 const CardList = ({ setData, filteredKeyword, searchItems }) => {
   const [inputItems, setInputItems] = useState([]);
   const [filteredData, setFilteredData] = useState(db);
-
-  useEffect(() => {
-    setData(inputItems);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [inputItems]);
 
   const doesItInclude = (item, searchItem) => {
     if (typeof item === 'string') {
@@ -18,6 +13,20 @@ const CardList = ({ setData, filteredKeyword, searchItems }) => {
     }
 
     return item.some(category => category.toLowerCase().includes(searchItem.toLowerCase()))
+  }
+
+  const isItemAdded = (item) => inputItems.some(inputItem => inputItem.id === item.id);
+
+  const addToInput = (item) => {
+    if (!isItemAdded(item)) {
+      setInputItems([...inputItems, item]);
+    }
+  }
+
+  const removeFromInput = (item) => {
+    if (isItemAdded(item)) {
+      setInputItems(inputItems.filter(i => i.id !== item.id));
+    }
   }
 
   useEffect(() => {
@@ -52,20 +61,11 @@ const CardList = ({ setData, filteredKeyword, searchItems }) => {
     }
   }, [filteredKeyword, searchItems])
 
+  useEffect(() => {
+    setData(inputItems);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [inputItems]);
 
-  const isItemAdded = (item) => inputItems.some(inputItem => inputItem.id === item.id);
-
-  const addToInput = (item) => {
-    if (!isItemAdded(item)) {
-      setInputItems([...inputItems, item]);
-    }
-  }
-
-  const removeFromInput = (item) => {
-    if (isItemAdded(item)) {
-      setInputItems(inputItems.filter(i => i.id !== item.id));
-    }
-  }
 
   return (
     <div className="card-list">

@@ -20,28 +20,37 @@ const Search = ({ setFilteredKeyword, addSearchItem }) => {
     }
   }
 
+  const ScrollToInput = () => {
+    const input = document.querySelector('.search-wrapper');
+    input.scrollIntoView({ behavior: 'smooth', block: 'start', });
+  }
+
   useEffect(() => {
     setFilteredKeyword(search);
   })
 
   return (
-    <div className="search-wrapper">
-      <div>
-        <SearchIcon className="search-icon" />
-      </div>
-      <input
-        type="text"
-        placeholder="Search..."
-        value={search}
-        onChange={handleSearchChange}
-        onKeyDown={handleClickEnter}
-      />
-      {search.length > 0 &&
-        <CloseIcon
-          className="close-icon"
-          onClick={handleClickCloseIcon}
+    <div className='search-wrapper'>
+      <div
+        onClick={ScrollToInput}
+        className="search">
+        <div>
+          <SearchIcon className="search-icon" />
+        </div>
+        <input
+          type="text"
+          placeholder="Search..."
+          value={search}
+          onChange={handleSearchChange}
+          onKeyDown={handleClickEnter}
         />
-      }
+        {search.length > 0 &&
+          <CloseIcon
+            className="close-icon"
+            onClick={handleClickCloseIcon}
+          />
+        }
+      </div>
     </div>
   )
 }

@@ -1,4 +1,4 @@
-.search-wrapper {
+.search {
   display: flex;
   border-bottom: 1px solid $white;
   align-items: center;
@@ -11,6 +11,7 @@
   justify-content: center;
   width: 300px;
   align-items: center;
+  margin-top: 20px;
 
   input {
     background-color: transparent;
@@ -38,4 +39,8 @@
     height: 32px;
     cursor: pointer;
   }
+}
+
+.search-wrapper{
+  margin-top: 20px;
 }

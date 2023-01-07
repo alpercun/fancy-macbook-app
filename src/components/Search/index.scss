@@ -44,3 +44,9 @@
 .search-wrapper{
   margin-top: 20px;
 }
+
+@media (max-width: 500px) {
+  .search {
+    width: 200px;
+  }
+}

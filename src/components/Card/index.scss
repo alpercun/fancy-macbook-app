@@ -35,9 +35,15 @@
 
   .body {
     color: $gray-1;
-    flex: 1;
     margin-top: 16px;
-    line-height: 140%;
+    height: 112px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    word-break: break-word;
+    line-height: 22px;
     user-select: none;
   }
 
@@ -75,6 +81,25 @@
     &::before {
       background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
       transition: .4s ease;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .card {
+    width: 260px;
+
+    .header {
+      .logo {
+        img{
+          width: 40px;
+          height: 40px;
+        }
+      }
+
+      .name {
+        font-size: 18px;
+      }
     }
   }
 }

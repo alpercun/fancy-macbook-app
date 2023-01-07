@@ -63,3 +63,9 @@
     height: 0;
   }
 }
+
+@media (max-width: 500px) {
+  .badge-list {
+    width: 300px;
+  }
+}

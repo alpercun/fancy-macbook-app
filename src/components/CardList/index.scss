@@ -32,3 +32,10 @@
     }
   }
 }
+
+@media (max-width: 500px) {
+  .card-list {
+    width: 100%;
+    justify-content: center;
+  }
+}

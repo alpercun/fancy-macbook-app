@@ -167,6 +167,15 @@
     &-description {
       font-size: 16px;
     }
+
+    .app-wrapper-1,
+    .app-wrapper-2,
+    .app-wrapper-3,
+    .app-wrapper-4 {
+      >svg {
+        padding: 8px;
+      }
+    } 
   }
 }
 

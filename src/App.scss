@@ -15,6 +15,13 @@
 
     .search-item-list-wrapper {
       margin-top: $spacer-3;
+      height: 32px;
+      height: 100%;
+      padding: 20px;
+
+      .search-item {
+        margin: 4px;
+      }
     }
 
     &.narrow {
@@ -55,10 +62,6 @@
   .badge-list {
     margin-top: $spacer-4;
   }
-
-  .search-item-list-wrapper {
-    height: 32px;
-  }
 }
 
 @media (max-width: 1200px) {
@@ -67,5 +70,21 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .sidebar {
+    display: none;
+  }
+
+  .app {
+    &.narrow {
+      margin-left: 0 !important;
+    }
+
+    &.wide {
+      margin-left: 0 !important;
+    }
   }
 }

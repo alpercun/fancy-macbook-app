@@ -1,7 +1,8 @@
 .card-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  width: calc(100% - 200px);
+  justify-content: space-between;
   margin-top: $spacer-6;
 
   &>* {

@@ -44,26 +44,28 @@ const App = () => {
       />
       <div className="container">
         <div className={`app ${isOpen ? `narrow` : `wide`}`}>
-          <Welcome />
-          <Search
-            setFilteredKeyword={setFilteredKeyword}
-            setSearchItems={setSearchItems}
-            addSearchItem={addSearchItem}
-          />
-          <BadgeList addSearchCategory={addSearchCategory} />
-          <div className="search-item-list-wrapper">
-            <SearchItemList
+          <Welcome className="welcome" />
+          <div className='content-wrapper'>
+            <Search
+              setFilteredKeyword={setFilteredKeyword}
+              setSearchItems={setSearchItems}
+              addSearchItem={addSearchItem}
+            />
+            <BadgeList addSearchCategory={addSearchCategory} />
+            <div className="search-item-list-wrapper">
+              <SearchItemList
+                searchItems={searchItems}
+                removeSearchItem={removeSearchItem}
+              />
+            </div>
+            <CardList
+              setData={setData}
               searchItems={searchItems}
-              removeSearchItem={removeSearchItem}
+              filteredKeyword={filteredKeyword}
             />
           </div>
-          <CardList
-            setData={setData}
-            searchItems={searchItems}
-            filteredKeyword={filteredKeyword}
-          />
+          <ScrollToTop />
         </div>
-        <ScrollToTop />
       </div>
     </div>
   );

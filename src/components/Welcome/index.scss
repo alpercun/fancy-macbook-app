@@ -66,3 +66,118 @@
     transform: translate(0px, 0px);
   }
 }
+
+@media (max-width: 1200px) {
+  .welcome{
+    &-header {
+      font-size: 60px;
+    }
+
+    &-description {
+      font-size: 30px;
+    }
+  }
+
+  .app-wrapper-1,
+  .app-wrapper-2,
+  .app-wrapper-3,
+  .app-wrapper-4 {
+    >svg {
+      padding: 14px 14px;
+      width: 48px;
+      height: 48px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .welcome{
+    &-header {
+      font-size: 50px;
+    }
+
+    &-description {
+      font-size: 25px;
+    }
+  }
+
+  .app-wrapper-1,
+  .app-wrapper-2,
+  .app-wrapper-3,
+  .app-wrapper-4 {
+    >svg {
+      width: 52px;
+      height: 52px;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .welcome{
+    &-header {
+      font-size: 45px;
+    }
+
+    &-description {
+      font-size: 22px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome{
+    &-header {
+      font-size: 40px;
+    }
+
+    &-description {
+      font-size: 20px;
+    }
+
+  .app-wrapper-1,
+  .app-wrapper-2,
+  .app-wrapper-3,
+  .app-wrapper-4 {
+    >svg {
+      width: 34px;
+      height: 34px;
+    }
+  }
+  }
+}
+
+@media (max-width: 600px) {
+  .welcome{
+    &-header {
+      font-size: 35px;
+    }
+
+    &-description {
+      font-size: 18px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome{
+    &-header {
+      font-size: 30px;
+    }
+
+    &-description {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .welcome{
+    &-header {
+      font-size: 25px;
+    }
+
+    &-description {
+      font-size: 14px;
+    }
+  }
+}

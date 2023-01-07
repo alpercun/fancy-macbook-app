@@ -78,3 +78,39 @@
     }
   }
 }
+
+@media (max-width: 1200px) {
+  .terminal {
+    width: 700px;
+  }
+}
+
+@media (max-width: 900px) {
+  .terminal {
+    width: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .terminal {
+    width: 400px;
+  }
+}
+
+@media (max-width: 600px) {
+  .terminal {
+    width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .terminal {
+    width: 200px;
+  }
+}
+
+@media (max-width: 320px) {
+  .terminal {
+    width: 100px;
+  }
+}

@@ -36,38 +36,40 @@ const App = () => {
   }
 
   return (
-    <div className="container-wrapper">
+    <>
       <Sidebar
         isOpen={isOpen}
         setIsOpen={setIsOpen}
         inputData={inputData}
       />
-      <div className="container">
-        <div className={`app ${isOpen ? `narrow` : `wide`}`}>
-          <Welcome className="welcome" />
-          <div className='content-wrapper'>
-            <Search
-              setFilteredKeyword={setFilteredKeyword}
-              setSearchItems={setSearchItems}
-              addSearchItem={addSearchItem}
-            />
-            <BadgeList addSearchCategory={addSearchCategory} />
-            <div className="search-item-list-wrapper">
-              <SearchItemList
+      <div className="container-wrapper">
+        <div className="container">
+          <div className={`app ${isOpen ? `narrow` : `wide`}`}>
+            <Welcome className="welcome" />
+            <div className='content-wrapper'>
+              <Search
+                setFilteredKeyword={setFilteredKeyword}
+                setSearchItems={setSearchItems}
+                addSearchItem={addSearchItem}
+              />
+              <BadgeList addSearchCategory={addSearchCategory} />
+              <div className="search-item-list-wrapper">
+                <SearchItemList
+                  searchItems={searchItems}
+                  removeSearchItem={removeSearchItem}
+                />
+              </div>
+              <CardList
+                setData={setData}
                 searchItems={searchItems}
-                removeSearchItem={removeSearchItem}
+                filteredKeyword={filteredKeyword}
               />
             </div>
-            <CardList
-              setData={setData}
-              searchItems={searchItems}
-              filteredKeyword={filteredKeyword}
-            />
+            <ScrollToTop />
           </div>
-          <ScrollToTop />
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

@@ -36,11 +36,11 @@
   &-wrapper {
     background: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(120, 119, 198, 0.3), rgba(255, 255, 255, 0));
 
-    .welcome{
+    .welcome {
       height: 100%;
     }
 
-    .content-wrapper{
+    .content-wrapper {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -48,7 +48,7 @@
       height: 100%;
       margin-top: 20px;
       transition: .3s ease;
-  
+
       .card-list {
         max-height: 1100px;
         min-height: 1100px;
@@ -65,7 +65,7 @@
 }
 
 @media (max-width: 1200px) {
-  .welcome{
+  .welcome {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -74,17 +74,17 @@
 }
 
 @media (max-width: 500px) {
-  .sidebar {
-    display: none;
-  }
+  .container {
+    margin-left: 75px;
 
-  .app {
-    &.narrow {
-      margin-left: 0 !important;
-    }
+    .app {
+      &.narrow {
+        margin-left: unset;
+      }
 
-    &.wide {
-      margin-left: 0 !important;
+      &.wide {
+        margin-left: unset;
+      }
     }
   }
 }

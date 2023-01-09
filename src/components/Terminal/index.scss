@@ -85,6 +85,12 @@
   }
 }
 
+@media (max-width: 1000px) {
+  .terminal {
+    width: 600px;
+  }
+}
+
 @media (max-width: 900px) {
   .terminal {
     width: 500px;
@@ -97,9 +103,10 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .terminal {
-    width: 300px;
+    width: 250px;
+    height: 250px;
   }
 }
 

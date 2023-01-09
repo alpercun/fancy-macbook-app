@@ -87,7 +87,8 @@
 
 @media (max-width: 500px) {
   .card {
-    width: 260px;
+    width: 200px;
+    max-width: 250px;
 
     .header {
       .logo {

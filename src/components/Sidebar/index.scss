@@ -2,7 +2,7 @@ $delay: .5s;
 $timing: 3s;
 
 .sidebar {
-  height: 100%;
+  height: 100vh;
   left: 0;
   position: fixed;
   transition: .2s ease;
@@ -15,7 +15,7 @@ $timing: 3s;
   .item-wrapper {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 100vh;
     justify-content: space-between;
   }
 
@@ -45,25 +45,21 @@ $timing: 3s;
   }
 
   .item {
-    padding: 20px
+    padding: 20px;
   }
 
   &.open {
     width: 320px;
   }
 
-  &.close {
-    width: 80px;
-  }
-
-  .on-off {
+  .sidebar-toggle {
     cursor: pointer;
   }
 }
 
 .bar {
   padding: 0;
-  position: absolute;
+  position: fixed;
   width: 1px;
   height: 120px;
   box-shadow: 1px 1px 2px 1px rgb(92 103 199);
@@ -111,4 +107,46 @@ $timing: 3s;
 .right {
   -webkit-animation-name: v-move;
   animation-name: v-move;
+}
+
+@media (max-width: 500px) {
+  .sidebar-wrapper {
+    .sidebar {
+      background: rgb(31 32 36);
+      height: 100vh;
+      top: 0;
+      left: 0;
+      position: fixed;
+      z-index: 1;
+
+      &.close {
+        width: 75px;
+      }
+
+      &.open {
+        width: 80vw;
+      }
+
+      .sidebar-toggle {
+        cursor: pointer;
+      }
+    }
+
+    .backdrop {
+      width: 20%;
+      background-color: rgba(255, 255, 255, 0.1);
+      ;
+      height: 100vh;
+      z-index: 10;
+      position: fixed;
+      top: 0;
+      right: 0;
+    }
+  }
+}
+
+
+.stop-scrolling {
+  height: 50%;
+  overflow: hidden;
 }

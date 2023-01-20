@@ -1,5 +1,5 @@
 import React,  {useEffect} from 'react'
-import { ReactComponent as GithubIcon } from '../../assets/svg/github.svg'
+
 import { ReactComponent as DoubleArrowRight } from '../../assets/svg/double-arrow-right.svg'
 import { ReactComponent as DoubleArrowLeft } from '../../assets/svg/double-arrow-left.svg'
 import { Input } from '../Input'
@@ -24,16 +24,6 @@ const Sidebar = ({ isOpen, setIsOpen, inputData }) => {
           <div className='item-top'>
             <div className='item'>
               CMA
-            </div>
-            <div className="github item">
-              <div className="logo">
-                <GithubIcon />
-              </div>
-              {
-                isOpen && <div className="content">
-                  Github
-                </div>
-              }
             </div>
             <AddApp isOpen={isOpen} />
             <Input isOpen={isOpen} getData={inputData} />

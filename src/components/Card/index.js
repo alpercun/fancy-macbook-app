@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 import { ActionButton } from '../ActionButton';
 import { Badge } from '../Badge';
@@ -10,6 +10,15 @@ const Card = ({ data, isAdded, addToInput, removeFromInput }) => {
 
   const showButton = () => setShowActionButton(true);
   const hideButton = () => !isAdded && setShowActionButton(false);
+
+  const isMobile = window.innerWidth <= 768;
+  
+  useEffect(() => {
+    if (isMobile) {
+      setShowActionButton(true);
+    }
+   }, [isMobile]);
+
 
   return (
     <div

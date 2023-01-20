@@ -143,6 +143,42 @@ $timing: 3s;
   }
 }
 
+@media (max-width: 280px) {
+  .sidebar-wrapper {
+    .sidebar {
+      background: rgb(31 32 36);
+      height: 100vh;
+      top: 0;
+      left: 0;
+      position: fixed;
+      z-index: 1;
+
+      &.close {
+        width: 75px;
+      }
+
+      &.open {
+        width: 80vw;
+      }
+
+      .sidebar-toggle {
+        cursor: pointer;
+      }
+    }
+
+    .backdrop {
+      width: 20%;
+      background-color: rgba(255, 255, 255, 0.1);
+      ;
+      height: 100vh;
+      z-index: 10;
+      position: fixed;
+      top: 0;
+      right: 0;
+    }
+  }
+}
+
 
 .stop-scrolling {
   height: 50%;

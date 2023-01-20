@@ -8,3 +8,10 @@
   min-width: 16px;
   padding: $spacer-2 $spacer-3;
 }
+
+@media (max-width: 280px) {
+  .badge {
+    height: 16px;
+    font-size: 12px;
+  }
+}

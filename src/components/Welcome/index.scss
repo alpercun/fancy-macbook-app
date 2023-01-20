@@ -190,3 +190,25 @@
     }
   }
 }
+
+@media (max-width: 280px) {
+  .welcome{
+    &-header {
+      font-size: 20px;
+    }
+
+    &-description {
+      font-size: 10px;
+    }
+
+    .app-wrapper-1,
+    .app-wrapper-2,
+    .app-wrapper-3,
+    .app-wrapper-4 {
+      >svg {
+        width: 22px;
+        padding: 4px;
+      }
+    } 
+  }
+}

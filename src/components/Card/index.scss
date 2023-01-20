@@ -104,3 +104,23 @@
     }
   }
 }
+
+@media (max-width: 280px) {
+  .card {
+    width: 100px;
+    height: 150px;
+
+    .header {
+      .logo {
+        img{
+          width: 32px;
+          height: 32px;
+        }
+      }
+
+      .name {
+        font-size: 12px;
+      }
+    }
+  }
+}

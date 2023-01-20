@@ -129,3 +129,30 @@
     height: 250px;
   }
 }
+
+@media (max-width: 280px) {
+  .terminal {
+    width: 180px;
+    height: 200px;
+
+    &-header {
+      &-action-buttons {
+
+        .red,
+        .yellow,
+        .green {
+          width: 8px;
+          height: 8px;
+        }
+      }
+
+      &-window {
+        font-size: 8px;
+      }
+    }
+
+    &-body-content {
+      font-size: 10px;
+    }
+  }
+}

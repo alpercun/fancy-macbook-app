@@ -50,3 +50,13 @@
     width: 200px;
   }
 }
+
+@media (max-width: 280px) {
+  .search {
+    width: 120px;
+
+    input {
+      font-size: 14px;
+    }
+  }
+}

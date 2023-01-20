@@ -154,6 +154,15 @@
     &.open,
     &.sidebar-expand {
       height: 260px;
+      width: calc(100% - 80px);
+    }
+  }
+}
+
+@media (max-width: 280px) {
+  .input {
+    .copy{
+      font-size: 12px;
     }
   }
 }

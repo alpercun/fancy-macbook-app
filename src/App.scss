@@ -88,3 +88,19 @@
     }
   }
 }
+
+@media (max-width: 280px) {
+  .container {
+    margin-left: 70px;
+
+    .app {
+      &.narrow {
+        margin-left: unset;
+      }
+
+      &.wide {
+        margin-left: unset;
+      }
+    }
+  }
+}

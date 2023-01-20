@@ -82,6 +82,26 @@
 @media (max-width: 1200px) {
   .terminal {
     width: 700px;
+
+    &-header {
+      &-action-buttons {
+
+        .red,
+        .yellow,
+        .green {
+          width: 12px;
+          height: 12px;
+        }
+      }
+
+      &-window {
+        font-size: 10px;
+      }
+    }
+
+    &-body-content {
+      font-size: 12px;
+    }
   }
 }
 
@@ -109,4 +129,3 @@
     height: 250px;
   }
 }
-

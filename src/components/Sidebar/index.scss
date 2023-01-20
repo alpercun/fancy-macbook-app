@@ -83,7 +83,7 @@ $timing: 3s;
 
 @-webkit-keyframes v-move {
   0% {
-    top: 0;
+    top: -100px;
   }
 
   100% {
@@ -93,7 +93,7 @@ $timing: 3s;
 
 @keyframes v-move {
   0% {
-    top: 0;
+    top: -100px;
   }
 
   100% {

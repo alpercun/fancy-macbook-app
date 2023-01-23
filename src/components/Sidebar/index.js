@@ -2,6 +2,8 @@ import React,  {useEffect} from 'react'
 
 import { ReactComponent as DoubleArrowRight } from '../../assets/svg/double-arrow-right.svg'
 import { ReactComponent as DoubleArrowLeft } from '../../assets/svg/double-arrow-left.svg'
+import { ReactComponent as Logo } from '../../assets/svg/logo.svg'
+
 import { Input } from '../Input'
 import { AddApp } from '../AddApp'
 
@@ -23,7 +25,7 @@ const Sidebar = ({ isOpen, setIsOpen, inputData }) => {
         <div className="item-wrapper">
           <div className='item-top'>
             <div className='item'>
-              CMA
+              <Logo />
             </div>
             <AddApp isOpen={isOpen} />
             <Input isOpen={isOpen} getData={inputData} />

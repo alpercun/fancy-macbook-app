@@ -105,7 +105,7 @@
 
     .app-count {
       top: 0;
-      right: $spacer-2;
+      right: 0;
       background-color: unset;
       position: absolute;
       color: $white;
@@ -125,6 +125,7 @@
     color: white;
     position: absolute;
     top: -45px;
+    left: -8px;
     padding: $spacer-3;
     border-radius: $spacer-3;
     display: none;
@@ -150,6 +151,11 @@
     &.active {
       display: block;
       transition: height 350ms ease-in-out;
+    }
+
+    &.open{
+      left: inherit;
+      margin-top: -6px;
     }
   }
 }

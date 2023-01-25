@@ -44,7 +44,7 @@ const Input = ({ getData, isOpen, removeFromInput }) => {
         </div>}
         {isOpen && 'Copy to clipboard'}
         <Copy />
-        <div className={`tooltip ${showTooltip ? 'active' : `disabled`}`}>
+        <div className={`tooltip ${showTooltip ? `active ${isOpen && 'open'}` : 'disabled'}`}>
           Copied
         </div>
       </div>

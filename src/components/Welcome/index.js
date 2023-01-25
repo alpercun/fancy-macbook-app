@@ -13,7 +13,7 @@ import { ReactComponent as Img12 } from '../../assets/image/img-12.svg'
 import { Terminal } from '../Terminal'
 
 
-const Welcome = () => {
+const Welcome = ({scrollToInput}) => {
   return (
     <div className="welcome">
       <div className='app-wrapper-1'>
@@ -38,6 +38,7 @@ const Welcome = () => {
       </div>
       <div className='welcome-header'>Find apps that suit you</div><br />
       <div className='welcome-description'>Download the best apps for you to customize<br /> your Mac.</div>
+      <button onClick={scrollToInput} className='welcome-button'>Get Started</button>
       <Terminal />
     </div >
   )

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { ReactComponent as SearchIcon } from '../../assets/svg/search.svg'
 import { ReactComponent as CloseIcon } from '../../assets/svg/close.svg'
 
-const Search = ({ setFilteredKeyword, addSearchItem }) => {
+const Search = ({ setFilteredKeyword, addSearchItem, scrollToInput, searchInputRef }) => {
   const [search, setSearch] = useState("");
 
   const handleSearchChange = (e) => {
@@ -20,19 +20,15 @@ const Search = ({ setFilteredKeyword, addSearchItem }) => {
     }
   }
 
-  const ScrollToInput = () => {
-    const input = document.querySelector('.search-wrapper');
-    input.scrollIntoView({ behavior: 'smooth', block: 'start', });
-  }
 
   useEffect(() => {
     setFilteredKeyword(search);
   })
 
   return (
-    <div className='search-wrapper'>
+    <div ref={searchInputRef} className='search-wrapper'>
       <div
-        onClick={ScrollToInput}
+        onClick={scrollToInput}
         className="search">
         <div>
           <SearchIcon className="search-icon" />

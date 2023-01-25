@@ -2,6 +2,7 @@
   height: 100vh;
   color: white;
   position: relative;
+  text-align: center;
 
   .application {
     width: 60px;
@@ -51,6 +52,30 @@
     text-align: center;
     margin-bottom: 36px;
   }
+
+  &-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    flex-shrink: 0;
+    color: inherit;
+    height: 48px;
+    text-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
+    gap: 8px;
+    margin: 0px;
+    border-radius: 24px;
+    padding: 0px 24px;
+    border-style: none;
+    transition: .4s ease;
+    background: linear-gradient(92.88deg, rgb(69, 94, 181) 9.16%, rgb(86, 67, 204) 43.89%, rgb(103, 63, 215) 64.72%);
+
+    &:hover {
+      text-shadow: rgb(0 0 0 / 56%) 0px 3px 12px;
+      box-shadow: rgb(80 63 205 / 50%) 0px 1px 40px;
+      transition: .4s ease;
+    }
+  }
 }
 
 @keyframes float-translate {
@@ -68,7 +93,7 @@
 }
 
 @media (max-width: 1200px) {
-  .welcome{
+  .welcome {
     &-header {
       font-size: 60px;
     }
@@ -91,7 +116,7 @@
 }
 
 @media (max-width: 1024px) {
-  .welcome{
+  .welcome {
     &-header {
       font-size: 50px;
     }
@@ -113,7 +138,7 @@
 }
 
 @media (max-width: 900px) {
-  .welcome{
+  .welcome {
     &-header {
       font-size: 45px;
     }
@@ -125,7 +150,7 @@
 }
 
 @media (max-width: 768px) {
-  .welcome{
+  .welcome {
     &-header {
       font-size: 40px;
     }
@@ -134,20 +159,20 @@
       font-size: 20px;
     }
 
-  .app-wrapper-1,
-  .app-wrapper-2,
-  .app-wrapper-3,
-  .app-wrapper-4 {
-    >svg {
-      width: 34px;
-      height: 34px;
+    .app-wrapper-1,
+    .app-wrapper-2,
+    .app-wrapper-3,
+    .app-wrapper-4 {
+      >svg {
+        width: 34px;
+        height: 34px;
+      }
     }
-  }
   }
 }
 
 @media (max-width: 600px) {
-  .welcome{
+  .welcome {
     &-header {
       font-size: 35px;
     }
@@ -159,7 +184,7 @@
 }
 
 @media (max-width: 480px) {
-  .welcome{
+  .welcome {
     &-header {
       font-size: 30px;
     }
@@ -175,12 +200,12 @@
       >svg {
         padding: 8px;
       }
-    } 
+    }
   }
 }
 
 @media (max-width: 320px) {
-  .welcome{
+  .welcome {
     &-header {
       font-size: 25px;
     }
@@ -192,7 +217,7 @@
 }
 
 @media (max-width: 280px) {
-  .welcome{
+  .welcome {
     &-header {
       font-size: 20px;
     }
@@ -209,6 +234,6 @@
         width: 22px;
         padding: 4px;
       }
-    } 
+    }
   }
 }

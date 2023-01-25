@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import './App.scss'
 import { CardList } from './components/CardList';
 import { Search } from './components/Search';
@@ -13,6 +13,7 @@ const App = () => {
   const [filteredKeyword, setFilteredKeyword] = useState('');
   const [searchItems, setSearchItems] = useState([]);
   const [isOpen, setIsOpen] = useState(false);
+  const searchInputRef = useRef(null);
 
   const setData = (apps) => {
     setInputData(apps);
@@ -35,6 +36,10 @@ const App = () => {
     setSearchItems([...new Set([...searchItems, category])]);
   }
 
+  const scrollToInput = () => {
+    searchInputRef.current.scrollIntoView({ behavior: 'smooth', block: 'start', });
+  }
+
   return (
     <>
       <Sidebar
@@ -45,12 +50,14 @@ const App = () => {
       <div className="container-wrapper">
         <div className="container">
           <div className={`app ${isOpen ? `narrow` : `wide`}`}>
-            <Welcome className="welcome" />
+            <Welcome scrollToInput={scrollToInput} />
             <div className='content-wrapper'>
               <Search
                 setFilteredKeyword={setFilteredKeyword}
                 setSearchItems={setSearchItems}
                 addSearchItem={addSearchItem}
+                scrollToInput={scrollToInput}
+                searchInputRef={searchInputRef}
               />
               <BadgeList addSearchCategory={addSearchCategory} />
               <div className="search-item-list-wrapper">

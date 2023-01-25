@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import './App.scss'
 import { CardList } from './components/CardList';
 import { Search } from './components/Search';
@@ -12,6 +12,7 @@ const App = () => {
   const [inputData, setInputData] = useState([]);
   const [filteredKeyword, setFilteredKeyword] = useState('');
   const [searchItems, setSearchItems] = useState([]);
+  const [inputItems, setInputItems] = useState([]);
   const [isOpen, setIsOpen] = useState(false);
   const searchInputRef = useRef(null);
 
@@ -40,12 +41,32 @@ const App = () => {
     searchInputRef.current.scrollIntoView({ behavior: 'smooth', block: 'start', });
   }
 
+  const isItemAdded = (item) => inputItems.some(inputItem => inputItem.id === item.id);
+
+  const addToInput = (item) => {
+    if (!isItemAdded(item)) {
+      setInputItems([...inputItems, item]);
+    }
+  }
+
+  const removeFromInput = (item) => {
+    if (isItemAdded(item)) {
+      setInputItems(inputItems.filter(i => i.id !== item.id));
+    }
+  }
+
+  useEffect(() => {
+    setData(inputItems);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [inputItems]);
+
   return (
     <>
       <Sidebar
         isOpen={isOpen}
         setIsOpen={setIsOpen}
         inputData={inputData}
+        removeFromInput={removeFromInput}
       />
       <div className="container-wrapper">
         <div className="container">
@@ -67,7 +88,9 @@ const App = () => {
                 />
               </div>
               <CardList
-                setData={setData}
+                addToInput={addToInput}
+                removeFromInput={removeFromInput}
+                isItemAdded={isItemAdded}
                 searchItems={searchItems}
                 filteredKeyword={filteredKeyword}
               />

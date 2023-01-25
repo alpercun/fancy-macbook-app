@@ -1,0 +1,33 @@
+.app {
+  &-name {
+    display: flex;
+    position: relative;
+
+    &:hover {
+      color: $gray-3;
+
+      .app-name-remove {
+        display: block;
+        position: absolute;
+        right: -14px;
+        top: -8px;
+        justify-content: center;
+        cursor: pointer;
+        padding: 4px;
+      }
+    }
+
+    &-list-command {
+      margin-right: $spacer-4;
+    }
+  }
+
+  &-name-remove {
+    display: none;
+    color: $red-1;
+  }
+
+  .close-icon {
+    font-size: 4px;
+  }
+}

@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import { ReactComponent as Copy } from '../../assets/svg/copy.svg'
 
-const Input = ({ getData, isOpen }) => {
+import { AppNameList } from '../AppNameList';
+
+const Input = ({ getData, isOpen, removeFromInput }) => {
   let result = ["brew install --cask"];
 
   const [showTooltip, setShowTooltip] = useState(false);
@@ -31,7 +33,7 @@ const Input = ({ getData, isOpen }) => {
   return (
     <div className={`input item ${isOpen && isAdded() ? 'sidebar-expand' : isOpen ? 'open' : `close ${!isAdded() && 'disabled'}`}`}>
       {isOpen && <div className="input-content">
-        {result.join(' ')}
+        <AppNameList getData={getData} removeFromInput={removeFromInput} />
       </div>}
       <div
         onClick={copyToClipboard}

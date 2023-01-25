@@ -1,0 +1,10 @@
+.app-name-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  .app-name {
+    margin-right: $spacer-4;
+  }
+}

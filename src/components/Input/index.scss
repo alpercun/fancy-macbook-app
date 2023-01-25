@@ -17,8 +17,10 @@
     box-shadow: 0px 0px 0px 0.2px $white;
     transition: .2s ease;
     margin-left: 20px;
+    line-height: 24px;
 
     .copy {
+      flex-shrink: 0;
       justify-content: center;
     }
 
@@ -63,7 +65,8 @@
   .input-content {
     display: block;
     flex-wrap: wrap;
-    width: 90%;
+    width: 100%;
+    overflow: auto;
     text-overflow: ellipsis;
     font-size: 14px;
     /* Safari */
@@ -72,6 +75,8 @@
     user-select: none;
     font-family: monospace;
     color: $white;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
   }
 
   .copy {

@@ -1,4 +1,4 @@
-import React,  {useEffect} from 'react'
+import React, { useEffect } from 'react'
 
 import { ReactComponent as DoubleArrowRight } from '../../assets/svg/double-arrow-right.svg'
 import { ReactComponent as DoubleArrowLeft } from '../../assets/svg/double-arrow-left.svg'
@@ -7,7 +7,7 @@ import { ReactComponent as Logo } from '../../assets/svg/logo.svg'
 import { Input } from '../Input'
 import { AddApp } from '../AddApp'
 
-const Sidebar = ({ isOpen, setIsOpen, inputData }) => {
+const Sidebar = ({ isOpen, setIsOpen, inputData, removeFromInput }) => {
 
   useEffect(() => {
     if (isOpen && window.innerWidth <= 500) {
@@ -28,10 +28,10 @@ const Sidebar = ({ isOpen, setIsOpen, inputData }) => {
               <Logo />
             </div>
             <AddApp isOpen={isOpen} />
-            <Input isOpen={isOpen} getData={inputData} />
+            <Input isOpen={isOpen} getData={inputData} removeFromInput={removeFromInput} />
           </div>
           <div className="sidebar-toggle item"
-            onClick={() => {setIsOpen(!isOpen)}}
+            onClick={() => { setIsOpen(!isOpen) }}
           >
             {isOpen ? <DoubleArrowLeft /> : <DoubleArrowRight />}
           </div>
@@ -39,11 +39,11 @@ const Sidebar = ({ isOpen, setIsOpen, inputData }) => {
       </div>
 
       {
-        isOpen && 
-          <div 
-            className='backdrop'
-            onClick={() => setIsOpen(false)}
-          />
+        isOpen &&
+        <div
+          className='backdrop'
+          onClick={() => setIsOpen(false)}
+        />
       }
 
     </div>

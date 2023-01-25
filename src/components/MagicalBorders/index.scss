@@ -1,0 +1,52 @@
+.magical-borders {
+  position: relative;
+
+  &:hover>*::after {
+    opacity: 1;
+  }
+
+  >* {
+    position: relative;
+
+    .magical-borders-inner {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      inset: 1px;
+      position: absolute;
+      z-index: 2;
+    }
+
+    &:hover::before {
+      opacity: 1;
+    }
+
+    &::before,
+    &::after {
+      border-radius: inherit;
+      content: '';
+      height: 100%;
+      left: 0;
+      opacity: 0;
+      pointer-events: none;
+      position: absolute;
+      top: 0;
+      transition: opacity 500ms;
+      width: 100%;
+    }
+
+    &::before {
+      background: radial-gradient(600px circle at var(--mouse-x) var(--mouse-y),
+          rgba(255, 255, 255, 0.035),
+          transparent 40%);
+      z-index: 15;
+    }
+
+    &::after {
+      background: radial-gradient(600px circle at var(--mouse-x) var(--mouse-y),
+          rgba(255, 255, 255, 0.4),
+          transparent 40%);
+      z-index: 1;
+    }
+  }
+}

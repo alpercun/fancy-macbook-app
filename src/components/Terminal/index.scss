@@ -1,10 +1,11 @@
 .terminal {
-  width: 900px;
-  height: 600px;
+  width: 800px;
+  height: 500px;
   background-color: rgba(81, 71, 79, 17%);
   border-radius: 20px;
   position: relative;
   overflow: hidden;
+  margin-top: 100px;
 
   &-header {
     display: flex;
@@ -14,6 +15,9 @@
     position: absolute;
     top: 0;
     background-color: black;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+
 
     &-action-buttons {
       display: flex;
@@ -76,6 +80,11 @@
         margin-right: 12px;
       }
     }
+  }
+
+  &-inner{
+    background-color: #1A1824;
+    border-radius: inherit;
   }
 }
 

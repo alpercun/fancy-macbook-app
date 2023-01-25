@@ -115,7 +115,7 @@ $timing: 3s;
       top: 0;
       left: 0;
       position: fixed;
-      z-index: 1;
+      z-index: 10;
 
       &.close {
         width: 75px;
@@ -133,7 +133,6 @@ $timing: 3s;
     .backdrop {
       width: 20%;
       background-color: rgba(255, 255, 255, 0.1);
-      ;
       height: 100vh;
       z-index: 10;
       position: fixed;
@@ -151,7 +150,7 @@ $timing: 3s;
       top: 0;
       left: 0;
       position: fixed;
-      z-index: 1;
+      z-index: 10;
 
       &.close {
         width: 75px;

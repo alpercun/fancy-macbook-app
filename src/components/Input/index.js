@@ -4,13 +4,18 @@ import { ReactComponent as Copy } from '../../assets/svg/copy.svg'
 import { AppNameList } from '../AppNameList';
 
 const Input = ({ getData, isOpen, removeFromInput }) => {
+  const installCommandHomebrew = `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)";`
+
   let result = ["brew install --cask"];
+  let addedApps = [];
+
 
   const [showTooltip, setShowTooltip] = useState(false);
+  const [shouldInstall, setShouldInstall] = useState(false);
 
   const formatData = (data) => {
     data.forEach(item => {
-      result.push(item.name);
+      addedApps.push(item.name);
     })
   }
   formatData(getData)
@@ -25,9 +30,21 @@ const Input = ({ getData, isOpen, removeFromInput }) => {
   }
 
   const isAdded = () => {
-    if (result.length === 1) return false;
+    if (addedApps.length === 0) return false;
 
     return true;
+  }
+
+  const handleShouldInstall = () => {
+    setShouldInstall(!shouldInstall);
+  }
+
+  if (shouldInstall) {
+    result.unshift(installCommandHomebrew);
+  }
+
+  if (addedApps.length > 0) {
+    result.push(addedApps.join(' '));
   }
 
   return (
@@ -35,12 +52,19 @@ const Input = ({ getData, isOpen, removeFromInput }) => {
       {isOpen && <div className="input-content">
         <AppNameList getData={getData} removeFromInput={removeFromInput} />
       </div>}
+      {
+        isOpen && 
+        <label className='input-checkbox'>
+          <input type="checkbox" onChange={handleShouldInstall} />
+          Install brew
+        </label>
+      }
       <div
         onClick={copyToClipboard}
         className={`copy ${!isOpen && isAdded() ? 'background-disabled' : isAdded() ? 'active' : 'disabled'}`}
       >
-        {result.length >= 2 && !isOpen && <div className="app-count">
-          {result.length - 1}
+        {addedApps.length >= 1 && !isOpen && <div className="app-count">
+          {addedApps.length}
         </div>}
         {isOpen && 'Copy to clipboard'}
         <Copy />

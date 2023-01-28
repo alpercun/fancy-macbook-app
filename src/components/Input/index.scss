@@ -76,7 +76,7 @@
     font-family: monospace;
     color: $white;
     padding-bottom: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 36px;
   }
 
   .copy {
@@ -153,15 +153,31 @@
       transition: height 350ms ease-in-out;
     }
 
-    &.open{
+    &.open {
       left: inherit;
       margin-top: -6px;
+    }
+  }
+
+  &-checkbox {
+    position: absolute;
+    bottom: 70px;
+    align-items: center;
+    color: hsla(0deg, 0%, 100%, 0.4);
+    font-size: 14px;
+    user-select: none;
+    line-height: 16px;
+    cursor: pointer;
+
+    input[type=checkbox] {
+      accent-color: $gray-4;
     }
   }
 }
 
 @media (max-width: 500px) {
   .input {
+
     &.open,
     &.sidebar-expand {
       height: 260px;
@@ -172,7 +188,7 @@
 
 @media (max-width: 280px) {
   .input {
-    .copy{
+    .copy {
       font-size: 12px;
     }
   }

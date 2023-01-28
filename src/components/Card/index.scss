@@ -36,7 +36,7 @@
   .body {
     color: $gray-1;
     margin-top: 16px;
-    height: 112px;
+    max-height: fit-content;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -45,12 +45,15 @@
     word-break: break-word;
     line-height: 22px;
     user-select: none;
+    overflow-y: auto;
   }
 
   .categories {
     margin-top: $spacer-4;
     display: flex;
     flex-wrap: wrap;
+    max-height: 67px;
+    overflow-y: scroll;
 
     >* {
       margin-right: $spacer-2;

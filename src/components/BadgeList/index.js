@@ -2,8 +2,10 @@ import { useRef, useState } from 'react'
 import { Badge } from '../Badge'
 import { ReactComponent as ExpandLeftArrow } from '../../assets/svg/expand-left-arrow.svg'
 import { ReactComponent as ExpandRightArrow } from '../../assets/svg/expand-right-arrow.svg'
+import db from '../../assets/db.json'
 
-const badgeTypes = ['cli', 'productivity', 'security', 'apperance', 'system', 'music'];
+
+const badgeTypes = Array.from(new Set(db.reduce((acc, item) => acc.concat(item.categories), [])));
 
 const BadgeList = ({ addSearchCategory }) => {
   const [scrollX, setscrollX] = useState(0);

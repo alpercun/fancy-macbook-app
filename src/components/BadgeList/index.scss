@@ -1,5 +1,5 @@
 .badge-list {
-  width: 400px;
+  width: 730px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -64,7 +64,13 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 900px) {
+  .badge-list {
+    width: 500px;
+  }
+}
+
+@media (max-width: 580px) {
   .badge-list {
     width: 270px;
   }

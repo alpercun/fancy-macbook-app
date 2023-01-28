@@ -1,113 +1,114 @@
-[{
+[  
+  {
     "id": 1,
     "name": "fig",
     "logo": "https://pbs.twimg.com/profile_images/1319410808925741056/weExhTBA_400x400.jpg",
     "description": "Fig adds IDE-style autocomplete to your existing terminal. Move faster with Fig.",
-    "categories": ["cli", "productivity"]
+    "categories": ["cli", "terminal", "autocomplete", "productivity", "command-line", "coding", "development", "software engineering"]
   },
   {
     "id": 2,
     "name": "alfred",
     "logo": "https://pbs.twimg.com/profile_images/3441709541/9fb69dcff86624e62ecaaa58c363e15b_400x400.jpeg",
     "description": "Alfred is an award-winning app for macOS which boosts your efficiency with hotkeys, keywords, text expansion and more.",
-    "categories": ["productivity"]
+    "categories": ["macOS", "productivity", "efficiency", "hotkeys", "keywords", "text expansion", "automation"]
   },
   {
     "id": 3,
     "name": "displaperture",
     "logo": "https://is3-ssl.mzstatic.com/image/thumb/Purple126/v4/bc/b5/59/bcb55927-00cd-dde6-8b7c-87082f2f1ecc/PMDisplaperture.png/230x0w.webp",
     "description": "Displaperture lets you round the corners of your display by an amount you define—anything from a subtle hint of rounding to a full-on oval, it's under your control.",
-    "categories": ["apperance"]
+    "categories": ["apperance", "display customization", "screen rounding", "screen corners", "display effects", "frames", "visuals", "design"]
   },
   {
     "id": 4,
     "name": "libreoffice",
     "logo": "https://www.logo.wine/a/logo/LibreOffice_Calc/LibreOffice_Calc-Logo.wine.svg",
     "description": "LibreOffice is a free and powerful office suite, and a successor to OpenOffice.org (commonly known as OpenOffice). Its clean interface and feature-rich tools help you unleash your creativity and enhance your productivity.",
-    "categories": ["productivity"]
+    "categories": ["office suite", "productivity", "creativity", "open source", "LibreOffice", "OpenOffice", "document editing", "spreadsheet software"]
   },
   {
     "id": 5,
     "name": "macs fan control",
     "logo": "https://pbs.twimg.com/media/FQDNJi1WUAER6Bo?format=jpg&name=small",
     "description": "Monitor and control your computer's fans.",
-    "categories": ["system"]
+    "categories": ["system", "fan control", "computer cooling", "temperature monitor", "Mac OS", "hardware monitoring"]
   },
   {
     "id": 6,
     "name": "spectacle",
     "logo": "https://pbs.twimg.com/profile_images/697149200040124416/frE-tzOh_400x400.png",
     "description": "Move and resize windows with ease.",
-    "categories": ["productivity"]
+    "categories": ["productivity", "window management", "window resizing", "window dragging", "mac utility", "mac optimization", "mac productivity"]
   },
   {
     "id": 7,
     "name": "rectangle",
     "logo": "https://rectangleapp.com/assets/pro/images/mac512pts1x.png",
     "description": "Move and resize windows in macOS using keyboard shortcuts or snap areas.",
-    "categories": ["productivity"]
+    "categories": ["productivity", "macOS", "windows", "keyboard shortcuts", "resize", "snap areas", "window management"]
   },
   {
     "id": 8,
     "name": "authy",
     "logo": "https://seeklogo.com/images/A/authy-logo-5598145895-seeklogo.com.png",
     "description": "Enable 2FA for your favorite sites. Go beyond the password and protect yourself from hackers and account takeovers.",
-    "categories": ["security"]
+    "categories": ["2fa", "security", "password management", "online protection", "cyber safety", "authentication", "online verification"]
   },
   {
     "id": 9,
     "name": "meeting bar",
     "logo": "https://is3-ssl.mzstatic.com/image/thumb/Purple112/v4/fb/cc/76/fbcc762c-9f12-3a57-b109-264656ad7d32/AppIcon-0-85-220-0-4-2x.png/1200x630bb.png",
     "description": "Your meetings before your eyes! MeetingBar shows your calendar events in the status bar. Create and join meetings in one click.",
-    "categories": ["productivity"]
+    "categories": ["calendar", "events", "scheduling", "productivity", "status bar", "time management", "meeting organization"]
   },
   {
     "id": 10,
     "name": "monitor control",
     "logo": "https://raw.githubusercontent.com/MonitorControl/MonitorControl/main/.github/Icon-cropped.png",
     "description": "Controls your external display brightness and volume and shows native OSD. Use menulet sliders or the keyboard, including native Apple keys!",
-    "categories": ["productivity"]
+    "categories": ["productivity", "monitor control", "display brightness", "volume control", "menulet sliders", "keyboard control", "Apple keys", "external displays", "native OSD"]
   },
   {
     "id": 11,
     "name": "amethyst",
     "logo": "https://pbs.twimg.com/profile_images/657586067529293824/Af24--yK_400x400.png",
     "description": "A tiling window manager for macOS.",
-    "categories": ["productivity"]
+    "categories": ["macOS", "window manager", "tiling", "productivity", "organizational tools", "custom layouts"]
   },
   {
     "id": 12,
     "name": "sloth",
     "logo": "https://raw.githubusercontent.com/sveinbjornt/Sloth/master/resources/sloth_icon.png",
     "description": "Sloth is a native Mac app that shows all open files, directories, sockets, pipes, and devices in use by all running processes on your system. This makes it easy to inspect which apps are using which files, etc.",
-    "categories": ["system"]
+    "categories": ["system", "mac", "app", "process inspection", "open files", "directories", "sockets", "pipes", "devices", "system monitoring"]
   },
   {
     "id": 13,
     "name": "lyricsx",
     "logo": "https://raw.githubusercontent.com/ddddxxx/LyricsX/master/docs/img/icon.png",
     "description": "Ultimate lyrics app for macOS.",
-    "categories": ["music"]
+    "categories": ["lyrics", "music", "macOS", "song lyrics", "karaoke", "singing", "audio streaming"]
   },
   {
     "id": 14,
     "name": "hush",
     "logo": "https://user-images.githubusercontent.com/378279/102943111-6dfe0500-44b7-11eb-9e9a-1c77d53a04ab.png",
     "description": "Block nags to accept cookies and privacy invasive tracking in Safari.",
-    "categories": ["productivity"]
+    "categories": ["productivity", "privacy", "tracking", "Safari", "cookies", "security", "protection", "data privacy"]
   },
   {
     "id": 15,
     "name": "colorsnapper",
     "logo": "https://pbs.twimg.com/profile_images/596352682660474881/gOmUUuzV_400x400.png",
     "description": "The color picker for Mac that makes it easy to inspect, adjust, organize, and export precise color values of any pixel on the screen.",
-    "categories": ["productivity"]
+    "categories": ["productivity", "color picker", "Mac", "color values", "inspection", "adjustment", "organization", "export"]
   },
   {
     "id": 16,
     "name": "raycast",
     "logo": "https://pbs.twimg.com/profile_images/1450891458299703296/yJEV2j6W_400x400.jpg",
     "description": "Raycast is a blazingly fast, totally extendable launcher. It lets you complete tasks, calculate, share common links, and much more.",
-    "categories": ["productivity"]
+    "categories": ["launcher", "productivity", "time-saving", "efficiency", "shortcuts", "automation", "fast access"]
   }
 ]

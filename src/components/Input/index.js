@@ -21,7 +21,7 @@ const Input = ({ getData, isOpen, removeFromInput }) => {
   formatData(getData)
 
   const copyToClipboard = () => {
-    if (result.length === 1) return;
+    if (addedApps.length === 0) return;
     navigator.clipboard.writeText(result.join(' '));
     setShowTooltip(true);
     setTimeout(() => {

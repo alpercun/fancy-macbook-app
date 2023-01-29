@@ -127,86 +127,72 @@
   },
   {
     "id": 19,
-    "name": "visual-studio-code",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Visual_Studio_Code_1.18_icon.svg/1200px-Visual_Studio_Code_1.18_icon.svg.png",
-    "description": "Open-source code editor",
-    "categories": ["code editor", "text editor", "source code editor", "debugging", "syntax highlighting", "intelligent code completion", "snippets", "code refactoring", "embedded Git"]
-  },
-  {
-    "id": 20,
-    "name": "zoom",
-    "logo": "https://pbs.twimg.com/profile_images/1569312122911485953/qn3iC3I2_400x400.jpg",
-    "description": "Video communication and virtual meeting platform",
-    "categories": ["video communication", "virtual meeting", "video conferencing", "video chat", "video calling", "web conferencing", "webinars", "screen sharing", "remote work", "remote learning", "remote collaboration"]
-  },
-  {
-    "id": 21,
-    "name": "spotify",
-    "logo": "https://pbs.twimg.com/profile_images/1013614110171250688/vrPUCDn2_400x400.jpg",
-    "description": "Music streaming service",
-    "categories": ["music streaming", "music player", "music", "audio streaming", "audio player", "audio"]
-  },
-  {
-    "id": 22,
     "name": "macfuse",
     "logo": "https://avatars.githubusercontent.com/u/838036?s=200&v=4",
     "description": "File system integratio",
     "categories": ["file system"]
   },
   {
-    "id": 23,
-    "name": "sublime-text",
-    "logo":"https://www.sublimehq.com/images/sublime_text.png",
-    "description": "Text editor for code, markup and prose",
-    "categories": ["text editor", "code editor", "source code editor", "syntax highlighting", "intelligent code completion", "snippets", "code refactoring", "embedded Git"]
-  },
-  {
-    "id": 24,
-    "name": "google-chrome",
-    "logo": "https://www.google.com/chrome/static/images/chrome-logo-m100.svg",
-    "description": "Web browser",
-    "categories": ["web browser", "browser", "internet browser", "internet", "web"]
-  },
-  {
-    "id": 25,
+    "id": 20,
     "name": "ngrok",
     "logo": "https://ngrok.com/static/img/ngrok-white.svg",
     "description": "Reverse proxy, secure introspectable tunnels to localhost",
     "categories": ["reverse proxy", "secure introspectable tunnels", "tunnels", "proxy", "secure", "introspectable"]
   },
   {
+    "id": 21,
+    "name": "keycastr",
+    "logo": "https://avatars.githubusercontent.com/keycastr?size=48",
+    "description": "Open-source keystroke visualizer",
+    "categories": ["keystroke visualizer", "keystroke", "keystroke visualisation", "keystroke visualisation tool", "keystroke visualisation software", "keystroke visualisation app", "keystroke visualisation application", "keystroke visualisation platform"]
+  },
+  {
+    "id": 22,
+    "name": "anydesk",
+    "logo": "https://pbs.twimg.com/profile_images/983830065921363968/O082XLLI_400x400.jpg",
+    "description": "Remote desktop software",
+    "categories": ["remote desktop", "remote desktop software", "remote desktop tool", "remote desktop application", "remote desktop platform"]
+  },
+  {
+    "id": 23,
+    "name": "shottr",
+    "logo": "https://pbs.twimg.com/profile_images/1333186731617755140/vhgGGXPr_400x400.jpg",
+    "description": "Screenshot tool",
+    "categories": ["screenshot", "screenshot tool", "screenshot application", "screenshot software", "screenshot platform"]
+  },
+  {
+    "id": 24,
+    "name": "warp",
+    "logo": "https://pbs.twimg.com/profile_images/1511227283444539395/JFY5O8ik_400x400.png",
+    "description": "Rust-based terminal",
+    "categories": ["terminal", "terminal emulator", "terminal application", "terminal software", "terminal platform"]
+  },
+  {
+    "id": 25,
+    "name": "karabiner-elements",
+    "logo": "https://karabiner-elements.pqrs.org/images/logo.png",
+    "description": "Keyboard customizer",
+    "categories": ["keyboard customizer", "keyboard customisation", "keyboard customisation tool", "keyboard customisation software", "keyboard customisation app", "keyboard customisation application", "keyboard customisation platform"]
+  },
+  {
     "id": 26,
-    "name": "firefox",
-    "logo": "https://www.mozilla.org/media/protocol/img/logos/firefox/browser/logo.eb1324e44442.svg",
-    "description": "Web browser",
-    "categories": ["web browser", "browser", "internet browser", "internet", "web"]
+    "name": "iina",
+    "logo": "https://raw.githubusercontent.com/iina/iina/master/iina/Assets.xcassets/AppIcon.appiconset/iina-icon-256.png",
+    "description": "Free and open-source media player",
+    "categories": ["media player", "media player software", "media player tool", "media player application", "media player platform"]
   },
   {
     "id": 27,
-    "name": "postman",
-    "logo": "https://voyager.postman.com/logo/postman-logo-icon-orange.svg",
-    "description": "Collaboration platform for API development",
-    "categories": ["collaboration platform", "API development", "API", "APIs", "APIs development", "APIs development platform", "APIs development tool", "APIs development software", "APIs development app", "APIs development application"]
+    "name": "insomnia",
+    "logo": "https://pbs.twimg.com/profile_images/1367596400410722305/-X7hZiSm_400x400.jpg",
+    "description": "API client",
+    "categories": ["api client", "api client software", "api client tool", "api client application", "api client platform"]
   },
   {
     "id": 28,
-    "name": "powershell",
-    "logo": "https://raw.githubusercontent.com/PowerShell/PowerShell/master/assets/ps_black_64.svg?sanitize=true",
-    "description": "Command-line shell and scripting language",
-    "categories": ["command-line shell", "scripting language", "shell", "command-line", "command line", "command", "command prompt", "command line interface", "CLI"]
-  },
-  {
-    "id": 29,
-    "name": "telegram",
-    "logo": "https://osx.telegram.org/updates/site/logo.png",
-    "description": "Messaging app with a focus on speed and security",
-    "categories": ["messaging app", "messaging", "messaging software", "messaging tool", "messaging application", "messaging platform"]
-  },
-  {
-    "id": 30,
-    "name": "dropbox",
-    "logo": "https://cfl.dropboxstatic.com/static/metaserver/static/images/logo_catalog/dropbox_logo_glyph_m1.svg",
-    "description": "Client for the Dropbox cloud storage service",
-    "categories": ["cloud storage", "file sharing", "file sharing service", "file sharing software", "file sharing tool", "file sharing application", "file sharing platform"]
+    "name": "maccy",
+    "logo": "https://camo.githubusercontent.com/c6a3c63f5d12ff71079d2f7e0936fefa8028d57e0f669ebfe912301270c2f92a/68747470733a2f2f6d616363792e6170702f696d672f6d616363792f4c6f676f2e706e67",
+    "description": "Clipboard manager",
+    "categories": ["clipboard manager", "clipboard manager software", "clipboard manager tool", "clipboard manager application", "clipboard manager platform"]
   }
 ]

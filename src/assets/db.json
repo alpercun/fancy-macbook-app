@@ -194,5 +194,45 @@
     "logo": "https://camo.githubusercontent.com/c6a3c63f5d12ff71079d2f7e0936fefa8028d57e0f669ebfe912301270c2f92a/68747470733a2f2f6d616363792e6170702f696d672f6d616363792f4c6f676f2e706e67",
     "description": "Clipboard manager",
     "categories": ["clipboard manager", "clipboard manager software", "clipboard manager tool", "clipboard manager application", "clipboard manager platform"]
+  },
+  {
+    "id": 29,
+    "name": "hiddenbar",
+    "logo": "https://raw.githubusercontent.com/dwarvesf/hidden/develop/img/icon_512%402x.png",
+    "description": "Hidden Bar lets you hide menu bar items to give your Mac a cleaner look.",
+    "categories": ["Productivity", "Menu Bar"],
+    "suggested-by": "hasantezcan"
+  },
+  {
+    "id": 30,
+    "name": "itsycal",
+    "logo": "https://pbs.twimg.com/profile_images/876284572488486912/wz5Wn8du_400x400.jpg",
+    "description": "Itsycal is a tiny menu bar calendar.",
+    "categories": ["Productivity", "Calendar", "Menu Bar"],
+    "suggested-by": "hasantezcan"
+  },
+  {
+    "id": 31,
+    "name": "alt-tab",
+    "logo": "https://d33wubrfki0l68.cloudfront.net/a006a16dc9b4af9d985b410d7813d2bffe4d51d1/96112/public/android-chrome-256x256.png",
+    "description": "AltTab brings the power of Windows alt-tab to macOS",
+    "categories": ["Productivity", "Windows Like"],
+    "suggested-by": "hasantezcan"
+  },
+  {
+    "id": 32,
+    "name": "runjs",
+    "logo": "https://runjs.app/static/icon.svg",
+    "description": "JavaScript playground that auto-evaluates as code is typed",
+    "categories": ["Productivity", "JavaScript", "Playground", "Code Editor"],
+    "suggested-by": "hasantezcan"
+  },
+  {
+    "id": 33,
+    "name": "linear-linear",
+    "logo": "https://pbs.twimg.com/profile_images/1602713683704127491/QdfI0c7L_400x400.jpg",
+    "description": "Meet the new standard for modern software development. Streamline issues, sprints, and product roadmaps.",
+    "categories": ["Productivity", "Project Management", "Task Management"],
+    "suggested-by": "hasantezcan"
   }
 ]

@@ -29,7 +29,7 @@
   },
   {
     "id": 5,
-    "name": "macs fan control",
+    "name": "macs-fan-control",
     "logo": "https://pbs.twimg.com/media/FQDNJi1WUAER6Bo?format=jpg&name=small",
     "description": "Monitor and control your computer's fans.",
     "categories": ["system", "fan control", "computer cooling", "temperature monitor", "Mac OS", "hardware monitoring"]
@@ -57,14 +57,14 @@
   },
   {
     "id": 9,
-    "name": "meeting bar",
+    "name": "meetingbar",
     "logo": "https://is3-ssl.mzstatic.com/image/thumb/Purple112/v4/fb/cc/76/fbcc762c-9f12-3a57-b109-264656ad7d32/AppIcon-0-85-220-0-4-2x.png/1200x630bb.png",
     "description": "Your meetings before your eyes! MeetingBar shows your calendar events in the status bar. Create and join meetings in one click.",
     "categories": ["calendar", "events", "scheduling", "productivity", "status bar", "time management", "meeting organization"]
   },
   {
     "id": 10,
-    "name": "monitor control",
+    "name": "monitorcontrol",
     "logo": "https://raw.githubusercontent.com/MonitorControl/MonitorControl/main/.github/Icon-cropped.png",
     "description": "Controls your external display brightness and volume and shows native OSD. Use menulet sliders or the keyboard, including native Apple keys!",
     "categories": ["productivity", "monitor control", "display brightness", "volume control", "menulet sliders", "keyboard control", "Apple keys", "external displays", "native OSD"]
@@ -234,5 +234,110 @@
     "description": "Meet the new standard for modern software development. Streamline issues, sprints, and product roadmaps.",
     "categories": ["Productivity", "Project Management", "Task Management"],
     "suggested-by": "hasantezcan"
+  },
+  {
+    "id": 34,
+    "name": "background-music",
+    "logo": "https://raw.githubusercontent.com/kyleneideck/BackgroundMusic/master/Images/README/FermataIcon.png",
+    "description": "Background Music automatically pauses your music player when a second audio source is playing and unpauses the player when the second source has stopped.",
+    "categories": ["Productivity", "Music", "Audio"]
+  },
+  {
+    "id": 35,
+    "name": "bitwarden",
+    "logo": "https://avatars.githubusercontent.com/u/15990069?s=200&v=4",
+    "description": "Open source password management solutions for individuals, teams, and business organizations.",
+    "categories": ["Productivity", "Password Manager", "Security"]
+  },
+  {
+    "id": 36,
+    "name": "flameshot",
+    "logo": "https://flameshot.org/flameshot-icon.svg",
+    "description": "Powerful, yet simple to use open-source screenshot software.",
+    "categories": ["Productivity", "Screenshot", "Screen Capture"]
+  },
+  {
+    "id": 37,
+    "name":"the-unarchiver",
+    "logo": "https://cdn.theunarchiver.com/img/unarchiver.png",
+    "description": "The Unarchiver is the only app you need to open RAR on Mac. It’s times more powerful than the native macOS utility and supports infinitely more archive formats.",
+    "categories": ["Productivity", "Archive", "Unarchive"]
+  },
+  {
+    "id": 38,
+    "name": "dozer",
+    "logo": "https://raw.githubusercontent.com/Mortennn/Dozer/master/Stuff/AppIcon.png",
+    "description": "Hide menu bar icons to give your Mac a cleaner look.",
+    "categories": ["Productivity", "Menu Bar"]
+  },
+  {
+    "id": 39,
+    "name": "unnaturalscrollwheels",
+    "logo": "https://raw.githubusercontent.com/ther0n/UnnaturalScrollWheels/master/UnnaturalScrollWheels/Assets.xcassets/AppIcon.appiconset/256x256.png",
+    "description": "Invert scroll direction for physical scroll wheels while maintaining 'Natural' scrolling for trackpads on MacOS.",
+    "categories": ["Productivity", "Scrolling"]
+  },
+  {
+    "id": 40,
+    "name": "mos",
+    "logo": "https://mos.caldis.me/resources/image/logo-big.png",
+    "description": "A lightweight tool used to smooth scrolling and set scroll direction independently for your mouse on MacOS",
+    "categories": ["Productivity", "Scrolling"]
+  },
+  {
+    "id": 41,
+    "name": "keepingyouawake",
+    "logo": "https://keepingyouawake.app/icon-128@2x.f6dddd43.png",
+    "description": "Tool to prevent the system from going into sleep mode.",
+    "categories": ["Productivity", "Sleep"]
+  },
+  {
+    "id": 42,
+    "name": "linearmouse",
+    "logo": "https://raw.githubusercontent.com/linearmouse/linearmouse/main/logo.svg",
+    "description": "Customize mouse behavior",
+    "categories": ["Productivity", "Mouse"]
+  },
+  {
+    "id": 43,
+    "name": "notunes",
+    "logo": "https://raw.githubusercontent.com/tombonez/noTunes/master/screenshots/app-icon.png",
+    "description": "noTunes is a macOS application that will prevent iTunes or Apple Music from launching. Simply launch the noTunes app and iTunes/Music will no longer be able to launch. For example, when bluetooth headphones reconnect.",
+    "categories": ["Productivity", "Music", "iTunes"]
+  },
+  {
+    "id": 44,
+    "name": "syntax-highlight",
+    "logo": "https://raw.githubusercontent.com/sbarex/SourceCodeSyntaxHighlight/master/assets/icon.png",
+    "description": "The application offers a Quick Look Extension for macOS 10.15 Catalina and later for previewing source files. Inside it uses Highlight to render source code with syntax highlighting.",
+    "categories": ["Productivity", "Quick Look", "Syntax Highlight"]
+  },
+  {
+    "id": 45,
+    "name": "kap",
+    "logo": "https://camo.githubusercontent.com/e272bb8007b4854234f6d98859bc7eb86bc60c723c1545506f783d4b1d15b082/68747470733a2f2f6765746b61702e636f2f7374617469632f66617669636f6e2f6b61702e737667",
+    "description": "An open-source screen recorder built with web technology",
+    "categories": ["Productivity", "Screen Recorder"]
+  },
+  {
+    "id": 46,
+    "name": "bluesnooze",
+    "logo": "https://raw.githubusercontent.com/odlp/bluesnooze/main/images/icon.png",
+    "description": "Bluesnooze prevents your sleeping Mac from connecting to Bluetooth accessories.",
+    "categories": ["Productivity", "Bluetooth", "Sleep"]
+  },
+  {
+    "id": 47,
+    "name": "todoist",
+    "logo": "https://pbs.twimg.com/profile_images/1235302046460497920/WcXKmXnQ_400x400.jpg",
+    "description": "Todoist is a task management app that helps you get organized and be more productive.",
+    "categories": ["Productivity", "Task Management"]
+  },
+  {
+    "id": 48,
+    "name": "middleclick",
+    "logo": "https://raw.githubusercontent.com/artginzburg/MiddleClick-Ventura/main/MiddleClick/Images.xcassets/AppIcon.appiconset/mouse128x128.png",
+    "description": "Emulate a scroll wheel click with three finger Click or Tap on MacBook trackpad and Magic Mouse",
+    "categories": ["Productivity", "Mouse"]
   }
 ]

@@ -1,4 +1,4 @@
-<div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+<div align="center">
   <img src="./public/icon-192x192.png" width="128" height="128" />
   <h1 align="center">Fancy Macbook App</h1>
   <br/>

@@ -341,10 +341,18 @@
     "categories": ["Productivity", "Mouse"]
   },
   {
-   "id": 49,
-   "name": "gas-mask",
-   "logo": "https://raw.githubusercontent.com/2ndalpha/gasmask/master/Resources/Images/About%20Box%20Image.png",
-   "description": "Gas Mask is a simple hosts file manager for macOS. It allows editing of host files and switching between them.",
-   "categories": ["Hosts", "System"]
-  }
+     "id": 49,
+     "name": "gas-mask",
+     "logo": "https://raw.githubusercontent.com/2ndalpha/gasmask/master/Resources/Images/About%20Box%20Image.png",
+     "description": "Gas Mask is a simple hosts file manager for macOS. It allows editing of host files and switching between them.",
+     "categories": ["Hosts", "System"]
+  },
+  {
+    "id": 50,
+    "name": "iina",
+    "logo": "https://raw.githubusercontent.com/iina/iina/master/iina/Assets.xcassets/AppIcon.appiconset/iina-icon-256.png",
+    "description": "IINA is the modern video player for macOS.",
+    "categories": ["Productivity", "Video Player"],
+    "suggested-by": "hasantezcan"
+  },
 ]

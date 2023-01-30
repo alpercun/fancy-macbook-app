@@ -339,5 +339,12 @@
     "logo": "https://raw.githubusercontent.com/artginzburg/MiddleClick-Ventura/main/MiddleClick/Images.xcassets/AppIcon.appiconset/mouse128x128.png",
     "description": "Emulate a scroll wheel click with three finger Click or Tap on MacBook trackpad and Magic Mouse",
     "categories": ["Productivity", "Mouse"]
+  },
+  {
+   "id": 49,
+   "name": "gas-mask",
+   "logo": "https://raw.githubusercontent.com/2ndalpha/gasmask/master/Resources/Images/About%20Box%20Image.png",
+   "description": "Gas Mask is a simple hosts file manager for macOS. It allows editing of host files and switching between them.",
+   "categories": ["Hosts", "System"]
   }
 ]

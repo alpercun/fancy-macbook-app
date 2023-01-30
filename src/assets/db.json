@@ -342,7 +342,7 @@
   },
   {
    "id": 49,
-   "name": "Gas Mask",
+   "name": "gas-mask",
    "logo": "https://raw.githubusercontent.com/2ndalpha/gasmask/master/Resources/Images/About%20Box%20Image.png",
    "description": "Gas Mask is a simple hosts file manager for macOS. It allows editing of host files and switching between them.",
    "categories": ["Hosts", "System"]

@@ -86,6 +86,10 @@
       transition: .4s ease;
     }
   }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 @media (max-width: 500px) {

@@ -346,5 +346,12 @@
    "logo": "https://raw.githubusercontent.com/2ndalpha/gasmask/master/Resources/Images/About%20Box%20Image.png",
    "description": "Gas Mask is a simple hosts file manager for macOS. It allows editing of host files and switching between them.",
    "categories": ["Hosts", "System"]
+  },
+  {
+    "id": 50,
+    "name": "lunar",
+    "logo": "https://static.lunar.fyi/svg/lunar.svg",
+    "description": "Intelligent adaptive brightness for your external monitors.",
+    "categories": ["Display", "Brightness", "XDR"]
   }
 ]

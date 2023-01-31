@@ -367,5 +367,12 @@
     "logo": "https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png",
     "description": "One workspace. Every team. We’re more than a doc. Or a table. Customize Notion to work the way you do.",
     "categories": ["Productivity", "Note Taking"]
+  },
+  {
+    "id": 53,
+    "name": "agenda",
+    "logo": "https://yt3.googleusercontent.com/ytc/AL5GRJXI7aLpISA5vEFMtg34RtPYAPsm7m6OAMXxQhjt=s176-c-k-c0x00ffffff-no-rj",
+    "description": "Agenda is a date-focused note taking app for both planning and documenting your projects.",
+    "categories": ["Productivity", "Note Taking"]
   }
 ]

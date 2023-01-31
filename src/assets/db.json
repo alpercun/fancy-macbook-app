@@ -353,5 +353,11 @@
     "logo": "https://static.lunar.fyi/svg/lunar.svg",
     "description": "Intelligent adaptive brightness for your external monitors.",
     "categories": ["Display", "Brightness", "XDR"]
+  },{
+    "id": 51,
+    "name": "RunCat",
+    "logo": "https://is4-ssl.mzstatic.com/image/thumb/Purple122/v4/40/cd/31/40cd31bf-f3a1-19bb-72f1-64c01cd2561d/AppIcon-0-85-220-0-4-2x.png/460x0w.webp",
+    "description": "You can check system information, the cat tells you the CPU usage of Mac by running speed.",
+    "categories": ["System", "Utilities", "Computer Health"]
   }
 ]

@@ -374,5 +374,12 @@
     "logo": "https://yt3.googleusercontent.com/ytc/AL5GRJXI7aLpISA5vEFMtg34RtPYAPsm7m6OAMXxQhjt=s176-c-k-c0x00ffffff-no-rj",
     "description": "Agenda is a date-focused note taking app for both planning and documenting your projects.",
     "categories": ["Productivity", "Note Taking"]
+  },
+  {
+    "id": 9999,
+    "name": "jetbrains-toolbox",
+    "logo": "https://resources.jetbrains.com/storage/products/toolbox/img/meta/toolbox_logo_300x300.png",
+    "description": "Manage your JetBrains tools easily.",
+    "categories": ["Productivity", "IDE", "Development"]
   }
 ]

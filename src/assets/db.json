@@ -374,5 +374,54 @@
     "logo": "https://yt3.googleusercontent.com/ytc/AL5GRJXI7aLpISA5vEFMtg34RtPYAPsm7m6OAMXxQhjt=s176-c-k-c0x00ffffff-no-rj",
     "description": "Agenda is a date-focused note taking app for both planning and documenting your projects.",
     "categories": ["Productivity", "Note Taking"]
+  },
+  {
+    "id": 999,
+    "name": "mos",
+    "logo": "https://mos.caldis.me/resources/image/logo-small.png",
+    "description": "Smooths scrolling and set mouse scroll directions independently",
+    "categories": ["Productivity"]
+  },
+  {
+    "id": 999,
+    "name": "iina",
+    "logo": "https://iina.io/images/iina-icon-60.png",
+    "description": "Free and open-source media player",
+    "categories": ["Video", "Music", "Media"]
+  },
+  {
+    "id": 999,
+    "name": "warp",
+    "logo": "https://assets-global.website-files.com/62176f9ffac2c484f913de2a/6218d8248b78cfc8aa32a902_logo.svg",
+    "description": "Warp is a blazingly fast, rust-based terminal reimagined from the ground up to work like a modern app.",
+    "categories": ["Terminal", "Productivity"]
+  },
+  {
+    "id": 999,
+    "name": "betterdisplay",
+    "logo": "https://raw.githubusercontent.com/waydabber/BetterDisplay/landing/.github/Icon-128.png",
+    "description": "Unlock your displays on your Mac! Smooth scaling, HiDPI unlock, XDR/HDR extra brightness upscale, DDC, brightness and dimming, dummy displays, PIP and lots more!",
+    "categories": ["Productivity", "Display"]
+  },
+  {
+    "id": 999,
+    "name": "colorsnapper",
+    "logo": "https://static.macupdate.com/products/37608/l/colorsnapper-logo.png?v=1604652530",
+    "description": "The color picker for Mac that makes it easy to inspect, adjust, organize, and export precise color values of any pixel on the screen.",
+    "categories": ["Productivity", "Color Picker"]
+  },
+  {
+    "id": 999,
+    "name": "meetingbar",
+    "logo": "https://static.macupdate.com/products/62747/m/meetingbar-logo.png?v=1658755595",
+    "description": "Your next meeting always before your eyes in the macOS menu bar",
+    "categories": ["Productivity", "Toolbar", "Meeting", "Menubar"]
+  },
+  {
+    "id": 999,
+    "name": "monitorcontrol",
+    "logo": "https://static.macupdate.com/products/62593/m/monitorcontrol-logo.png",
+    "description": "Your next meeting always before your eyes in the macOS menu bar",
+    "categories": ["Productivity", "Toolbar", "Display", "Monitor", "Menubar"]
   }
 ]

@@ -374,5 +374,26 @@
     "logo": "https://yt3.googleusercontent.com/ytc/AL5GRJXI7aLpISA5vEFMtg34RtPYAPsm7m6OAMXxQhjt=s176-c-k-c0x00ffffff-no-rj",
     "description": "Agenda is a date-focused note taking app for both planning and documenting your projects.",
     "categories": ["Productivity", "Note Taking"]
+  },
+  {
+    "id": 54,
+    "name": "lighshot",
+    "logo": "https://st.prntscr.com/2022/09/11/1722/img/icon_lightshot.png",
+    "description": "Lightshot is a free program that offers a quick and easy way to capture a screen including basic editing tools.",
+    "categories": ["Screenshot", "Productivity", "Screen Capture"]
+   },
+  {
+    "id": 55,
+    "name": "hot",
+    "logo": "https://static.macupdate.com/products/62792/m/hot-logo.webp?v=1668712882",
+    "description": "Hot is macOS menu bar application that displays the CPU speed limit due to thermal issues.",
+    "categories": ["System", "Thermal", "Temperature"]
+  },
+  {
+    "id": 56,
+    "name": "tiles",
+    "logo": "https://static.macupdate.com/products/61314/m/tiles-logo.webp?v=1656609368",
+    "description": "The minimalist window manager.",
+    "categories": ["Window Manager", "Tiling", "Productivity", "Organizational Tools", "Custom Layouts"]
   }
 ]

@@ -41,7 +41,7 @@ const App = () => {
     searchInputRef.current.scrollIntoView({ behavior: 'smooth', block: 'start', });
   }
 
-  const isItemAdded = (item) => inputItems.some(inputItem => inputItem.id === item.id);
+  const isItemAdded = (item) => inputItems.some(inputItem => inputItem.name === item.name);
 
   const addToInput = (item) => {
     if (!isItemAdded(item)) {
@@ -51,7 +51,7 @@ const App = () => {
 
   const removeFromInput = (item) => {
     if (isItemAdded(item)) {
-      setInputItems(inputItems.filter(i => i.id !== item.id));
+      setInputItems(inputItems.filter(i => i.name !== item.name));
     }
   }
 

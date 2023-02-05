@@ -12,12 +12,12 @@ const Card = ({ data, isAdded, addToInput, removeFromInput }) => {
   const hideButton = () => !isAdded && setShowActionButton(false);
 
   const isMobile = window.innerWidth <= 768;
-  
+
   useEffect(() => {
     if (isMobile) {
       setShowActionButton(true);
     }
-   }, [isMobile]);
+  }, [isMobile]);
 
 
   return (
@@ -45,7 +45,7 @@ const Card = ({ data, isAdded, addToInput, removeFromInput }) => {
         {
           categories.map(
             (category, index) =>
-              <Badge category={category} key={index} />
+              <Badge category={category} key={index} addSearchCategory={() => { }} />
           )
         }
       </div>

@@ -327,5 +327,11 @@
     "logo": "https://resources.jetbrains.com/storage/products/toolbox/img/meta/toolbox_logo_300x300.png",
     "description": "Manage your JetBrains tools easily.",
     "categories": ["Productivity", "IDE", "Development"]
+  },
+  {
+    "name": "numi",
+    "logo": "https://numi.app/images/numi-icon@2x.png",
+    "description": "Numi is a handy calculator app for macOS. It allows you to describe tasks naturally and instantly get an accurate answer.",
+    "categories": ["calculator", "productivity", "macOS"]
   }
 ]

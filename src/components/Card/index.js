@@ -1,10 +1,20 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 
 import { ActionButton } from '../ActionButton';
-import { Badge } from '../Badge';
+import { BadgeList } from '../BadgeList';
 
 const Card = ({ data, isAdded, addToInput, removeFromInput }) => {
   const { logo, name, description, categories } = data;
+
+  const listRef = useRef(null);
+  const listRefCard = useRef(null);
+
+  useEffect(() => {
+    if (300 >listRef.current.offsetWidth) {
+      listRef.current.querySelector('.icon').style.display = 'none';
+      // listRef.current.querySelector('.icon').style.display = 'initial';
+    }
+  }, [listRef]);
 
   const [showActionButton, setShowActionButton] = useState(false);
 
@@ -19,9 +29,9 @@ const Card = ({ data, isAdded, addToInput, removeFromInput }) => {
     }
   }, [isMobile]);
 
-
   return (
     <div
+      ref={listRefCard}
       className="card"
       onMouseEnter={showButton}
       onMouseLeave={hideButton}
@@ -42,12 +52,12 @@ const Card = ({ data, isAdded, addToInput, removeFromInput }) => {
         {description}
       </div>
       <div className="categories">
-        {
-          categories.map(
-            (category, index) =>
-              <Badge category={category} key={index} addSearchCategory={() => { }} />
-          )
-        }
+        <div className='badge-list-wrapper' ref={listRef}>
+          <BadgeList
+            badgeTypes={categories}
+            addSearchCategory={() => { }}
+          />
+        </div>
       </div>
       {
         showActionButton && (

@@ -327,5 +327,11 @@
     "logo": "https://resources.jetbrains.com/storage/products/toolbox/img/meta/toolbox_logo_300x300.png",
     "description": "Manage your JetBrains tools easily.",
     "categories": ["Productivity", "IDE", "Development"]
+  },
+  {
+    "name": "github",
+    "logo": "https://desktop.github.com/images/desktop-icon.svg",
+    "description": "Desktop client for GitHub repositories",
+    "categories": ["Productivity", "GitHub", "Development"]
   }
 ]

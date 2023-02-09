@@ -1,3 +1,8 @@
+.badge-list-wrapper {
+  position: relative;
+  width: 100%;
+}
+
 .badge-list {
   width: 730px;
   display: flex;
@@ -79,5 +84,38 @@
 @media (max-width: 280px) {
   .badge-list {
     width: 150px;
+  }
+}
+
+.scroll-button {
+  position: absolute;
+  z-index: 2;
+
+  &.scroll-button-start {
+    left: -5px;
+
+    > .icon-ghost-left {
+      left: 0;
+      width: 81px;
+    }
+
+    > svg {
+      z-index: 1;
+      position: relative;
+    }
+  }
+
+  &.scroll-button-end {
+    right: -5px;
+    z-index: 2;
+
+    > .icon-ghost-right {
+      right: 0;
+      width: 81px;
+    }
+
+    > svg {
+      position: relative;
+    }
   }
 }

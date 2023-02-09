@@ -1,35 +1,30 @@
-import React, { useEffect, useState } from 'react'
-import { ReactComponent as SearchIcon } from '../../assets/svg/search.svg'
-import { ReactComponent as CloseIcon } from '../../assets/svg/close.svg'
+import React, { useEffect, useState } from "react";
+import { ReactComponent as SearchIcon } from "../../assets/svg/search.svg";
+import { ReactComponent as CloseIcon } from "../../assets/svg/close.svg";
 
-const Search = ({ setFilteredKeyword, addSearchItem, scrollToInput, searchInputRef }) => {
-  const [search, setSearch] = useState("");
-
+const Search = ({ setFilteredKeyword, addSearchItem, scrollToInput, searchInputRef, search, setSearch }) => {
   const handleSearchChange = (e) => {
     setSearch(e.target.value);
-  }
+  };
 
   const handleClickCloseIcon = () => {
     setSearch("");
-  }
+  };
 
   const handleClickEnter = (e) => {
     if (e.key === "Enter") {
       addSearchItem(e.target.value);
       setSearch("");
     }
-  }
-
+  };
 
   useEffect(() => {
     setFilteredKeyword(search);
-  })
+  });
 
   return (
-    <div ref={searchInputRef} className='search-wrapper'>
-      <div
-        onClick={scrollToInput}
-        className="search">
+    <div ref={searchInputRef} className="search-wrapper">
+      <div onClick={scrollToInput} className="search">
         <div>
           <SearchIcon className="search-icon" />
         </div>
@@ -40,15 +35,10 @@ const Search = ({ setFilteredKeyword, addSearchItem, scrollToInput, searchInputR
           onChange={handleSearchChange}
           onKeyDown={handleClickEnter}
         />
-        {search.length > 0 &&
-          <CloseIcon
-            className="close-icon"
-            onClick={handleClickCloseIcon}
-          />
-        }
+        {search.length > 0 && <CloseIcon className="close-icon" onClick={handleClickCloseIcon} />}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export { Search }
+export { Search };

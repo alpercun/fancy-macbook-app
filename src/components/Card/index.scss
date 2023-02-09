@@ -25,17 +25,43 @@
       }
     }
 
-    .name {
+    > .right {
+      display: flex;
+      flex-direction: column;
       margin-left: 10px;
-      font-size: 22px;
-      font-weight: bold;
-      color: $gray-3;
+
+      .name {
+        font-size: 22px;
+        font-weight: bold;
+        color: $gray-3;
+      }
+
+      .suggester {
+        display: flex;
+        align-items: center;
+        margin-top: 5px;
+        color: #c8d6e5;
+        font-size: 12px;
+        gap: 5px;
+
+        > p {
+          max-width: 15ch;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+
+        > img {
+          width: 25px;
+          border-radius: 100%;
+          border: 1px solid #1b1d2b;
+        }
+      }
     }
   }
 
   .body {
     color: $gray-1;
-    margin-top: 16px;
     max-height: fit-content;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -49,13 +75,12 @@
   }
 
   .categories {
-    margin-top: $spacer-4;
     display: flex;
     flex-wrap: wrap;
     max-height: 67px;
     overflow-y: scroll;
 
-    >* {
+    > * {
       margin-right: $spacer-2;
       margin-bottom: $spacer-2;
     }
@@ -74,9 +99,9 @@
 
     .icon {
       &-ghost-right {
-        background: linear-gradient(to left, rgba(10, 11, 27, 0.89) 20%, rgba(95, 84, 84, 0) 80%)
+        background: linear-gradient(to left, rgba(10, 11, 27, 0.89) 20%, rgba(95, 84, 84, 0) 80%);
       }
-    
+
       &-ghost-left {
         background: linear-gradient(to right, rgba(10, 11, 27, 0.89) 20%, rgba(255, 255, 255, 0) 80%);
       }
@@ -105,7 +130,7 @@
   &:hover {
     &::before {
       background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
-      transition: .4s ease;
+      transition: 0.4s ease;
     }
   }
 
@@ -121,7 +146,7 @@
 
     .header {
       .logo {
-        img{
+        img {
           width: 40px;
           height: 40px;
         }
@@ -141,7 +166,7 @@
 
     .header {
       .logo {
-        img{
+        img {
           width: 32px;
           height: 32px;
         }

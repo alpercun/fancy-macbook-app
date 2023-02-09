@@ -67,6 +67,28 @@
     }
   }
 
+  .badge-list {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+
+    .icon {
+      &-ghost-right {
+        background: linear-gradient(to left, rgba(10, 11, 27, 0.89) 20%, rgba(95, 84, 84, 0) 80%)
+      }
+    
+      &-ghost-left {
+        background: linear-gradient(to right, rgba(10, 11, 27, 0.89) 20%, rgba(255, 255, 255, 0) 80%);
+      }
+    }
+  }
+
+  .badge-list-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
   &::before {
     content: "";
     pointer-events: none;

@@ -2,22 +2,20 @@ import { useRef, useState } from 'react'
 import { Badge } from '../Badge'
 import { ReactComponent as ExpandLeftArrow } from '../../assets/svg/expand-left-arrow.svg'
 import { ReactComponent as ExpandRightArrow } from '../../assets/svg/expand-right-arrow.svg'
-import db from '../../assets/db.json'
 
-
-const badgeTypes = Array.from(new Set(db.reduce((acc, item) => acc.concat(item.categories), [])));
-
-const BadgeList = ({ addSearchCategory }) => {
+const BadgeList = ({ addSearchCategory, badgeTypes }) => {
   const [scrollX, setscrollX] = useState(0);
   const [scrolEnd, setscrolEnd] = useState(false);
 
   let scrl = useRef(null);
 
   //Slide click
-  const slide = (shift) => {
+  const slide = (event, shift) => {
+    event.preventDefault();
+    event.stopPropagation();
     scrl.current.scrollLeft += shift;
     setscrollX(scrollX + shift);
-
+  
     if (
       Math.floor(scrl.current.scrollWidth - scrl.current.scrollLeft) <=
       scrl.current.offsetWidth
@@ -28,7 +26,7 @@ const BadgeList = ({ addSearchCategory }) => {
     }
   };
 
-  const scrollCheck = () => {
+  const scrollCheck = (event) => {
     setscrollX(scrl.current.scrollLeft);
     if (
       Math.floor(scrl.current.scrollWidth - scrl.current.scrollLeft) <=
@@ -41,10 +39,10 @@ const BadgeList = ({ addSearchCategory }) => {
   };
 
   return (
-    <div className="badge-list">
+    <div className="badge-list" onClick={(event) => slide(event, 0)}>
       {scrollX !== 0 && (
         <div className='icon'>
-          <ExpandLeftArrow onClick={() => slide(-75)} />
+          <ExpandLeftArrow onClick={(event) => slide(event, -75)} />
           <div className='icon-ghost-left' />
         </div>
       )}
@@ -60,7 +58,7 @@ const BadgeList = ({ addSearchCategory }) => {
         <>
           <div className='icon'>
             <div className='icon-ghost-right' />
-            <ExpandRightArrow onClick={() => slide(+75)} />
+            <ExpandRightArrow onClick={(event) => slide(event, +75)} />
           </div>
         </>
       )}

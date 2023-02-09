@@ -7,6 +7,9 @@ import { SearchItemList } from './components/SearchItemList';
 import { ScrollToTop } from './components/ScrollToTop';
 import { BadgeList } from './components/BadgeList';
 import { Welcome } from './components/Welcome';
+import db from './assets/db.json'
+
+const badgeTypes = Array.from(new Set(db.reduce((acc, item) => acc.concat(item.categories), [])));
 
 const App = () => {
   const [inputData, setInputData] = useState([]);
@@ -80,7 +83,10 @@ const App = () => {
                 scrollToInput={scrollToInput}
                 searchInputRef={searchInputRef}
               />
-              <BadgeList addSearchCategory={addSearchCategory} />
+              <BadgeList
+                badgeTypes={badgeTypes}
+                addSearchCategory={addSearchCategory}
+              />
               <div className="search-item-list-wrapper">
                 <SearchItemList
                   searchItems={searchItems}

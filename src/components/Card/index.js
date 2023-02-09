@@ -1,23 +1,11 @@
-import React, { useState, useEffect, useRef } from 'react'
-
-import { ActionButton } from '../ActionButton';
-import { BadgeList } from '../BadgeList';
+import React, { useState, useEffect } from "react";
+import { ActionButton } from "../ActionButton";
+import { BadgeList } from "../BadgeList";
 
 const Card = ({ data, isAdded, addToInput, removeFromInput }) => {
-  const { logo, name, description, categories } = data;
-
-  const listRef = useRef(null);
-  const listRefCard = useRef(null);
-
-  useEffect(() => {
-    if (300 >listRef.current.offsetWidth) {
-      listRef.current.querySelector('.icon').style.display = 'none';
-      // listRef.current.querySelector('.icon').style.display = 'initial';
-    }
-  }, [listRef]);
+  const { logo, name, description, categories, suggester } = data;
 
   const [showActionButton, setShowActionButton] = useState(false);
-
   const showButton = () => setShowActionButton(true);
   const hideButton = () => !isAdded && setShowActionButton(false);
 
@@ -31,7 +19,6 @@ const Card = ({ data, isAdded, addToInput, removeFromInput }) => {
 
   return (
     <div
-      ref={listRefCard}
       className="card"
       onMouseEnter={showButton}
       onMouseLeave={hideButton}
@@ -39,36 +26,28 @@ const Card = ({ data, isAdded, addToInput, removeFromInput }) => {
     >
       <div className="header">
         <div className="logo">
-          <img
-            src={logo}
-            alt={name}
-          />
+          <img src={logo} alt={name} />
         </div>
-        <div className="name">
-          {name}
+        <div className="right">
+          <div className="name">{name}</div>
+          {suggester && (
+            <div className="suggester">
+              <p>Suggested by</p>
+              <img src={`https://avatars.githubusercontent.com/${suggester}`} alt="suggester-avatar" />
+              <p>{suggester}</p>
+            </div>
+          )}
         </div>
       </div>
-      <div className="body">
-        {description}
-      </div>
+      <div className="body">{description}</div>
       <div className="categories">
-        <div className='badge-list-wrapper' ref={listRef}>
-          <BadgeList
-            badgeTypes={categories}
-            addSearchCategory={() => { }}
-          />
+        <div className="badge-list-wrapper" >
+          <BadgeList badgeTypes={categories} slideOffset={100} data={data} />
         </div>
       </div>
-      {
-        showActionButton && (
-          <ActionButton
-            addToInput={addToInput}
-            removeFromInput={removeFromInput}
-            isAdded={isAdded}
-          />)
-      }
+      {showActionButton && <ActionButton addToInput={addToInput} removeFromInput={removeFromInput} isAdded={isAdded} />}
     </div>
-  )
-}
+  );
+};
 
-export { Card }
+export { Card };

@@ -337,7 +337,7 @@
   {
     "name": "github",
     "logo": "https://desktop.github.com/images/desktop-icon.svg",
-    "description": "Desktop client for GitHub repositories",
+    "description": "Desktop client for GitHub repositories.",
     "categories": ["Productivity", "GitHub", "Development"]
   }
 ]

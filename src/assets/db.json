@@ -509,5 +509,12 @@
     "description": "Numi is a handy calculator app for macOS. It allows you to describe tasks naturally and instantly get an accurate answer.",
     "categories": ["calculator", "productivity", "macOS"],
     "suggester": "rmarquet21"
+  },
+  {
+    "name": "github",
+    "logo": "https://desktop.github.com/images/desktop-icon.svg",
+    "description": "Desktop client for GitHub repositories.",
+    "categories": ["Productivity", "GitHub", "Development"],
+    "suggester": "volkanto"
   }
 ]

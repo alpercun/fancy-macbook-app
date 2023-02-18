@@ -1,379 +1,521 @@
-[  
+[
   {
-    "id": 1,
     "name": "fig",
     "logo": "https://pbs.twimg.com/profile_images/1319410808925741056/weExhTBA_400x400.jpg",
     "description": "Fig adds IDE-style autocomplete to your existing terminal. Move faster with Fig.",
-    "categories": ["cli", "terminal", "autocomplete", "productivity", "command-line", "coding", "development", "software engineering"]
+    "categories": [
+      "cli",
+      "terminal",
+      "autocomplete",
+      "productivity",
+      "command-line",
+      "coding",
+      "development",
+      "software engineering"
+    ],
+    "suggester": "alpercun"
   },
   {
-    "id": 2,
     "name": "alfred",
     "logo": "https://pbs.twimg.com/profile_images/3441709541/9fb69dcff86624e62ecaaa58c363e15b_400x400.jpeg",
     "description": "Alfred is an award-winning app for macOS which boosts your efficiency with hotkeys, keywords, text expansion and more.",
-    "categories": ["macOS", "productivity", "efficiency", "hotkeys", "keywords", "text expansion", "automation"]
+    "categories": ["macOS", "productivity", "efficiency", "hotkeys", "keywords", "text expansion", "automation"],
+    "suggester": "batin"
   },
   {
-    "id": 3,
     "name": "displaperture",
     "logo": "https://is3-ssl.mzstatic.com/image/thumb/Purple126/v4/bc/b5/59/bcb55927-00cd-dde6-8b7c-87082f2f1ecc/PMDisplaperture.png/230x0w.webp",
     "description": "Displaperture lets you round the corners of your display by an amount you define—anything from a subtle hint of rounding to a full-on oval, it's under your control.",
-    "categories": ["apperance", "display customization", "screen rounding", "screen corners", "display effects", "frames", "visuals", "design"]
+    "categories": [
+      "apperance",
+      "display customization",
+      "screen rounding",
+      "screen corners",
+      "display effects",
+      "frames",
+      "visuals",
+      "design"
+    ],
+    "suggester": "alpercun"
   },
   {
-    "id": 4,
     "name": "libreoffice",
     "logo": "https://www.logo.wine/a/logo/LibreOffice_Calc/LibreOffice_Calc-Logo.wine.svg",
     "description": "LibreOffice is a free and powerful office suite, and a successor to OpenOffice.org (commonly known as OpenOffice). Its clean interface and feature-rich tools help you unleash your creativity and enhance your productivity.",
-    "categories": ["office suite", "productivity", "creativity", "open source", "LibreOffice", "OpenOffice", "document editing", "spreadsheet software"]
+    "categories": [
+      "office suite",
+      "productivity",
+      "creativity",
+      "open source",
+      "LibreOffice",
+      "OpenOffice",
+      "document editing",
+      "spreadsheet software"
+    ]
   },
   {
-    "id": 5,
     "name": "macs-fan-control",
     "logo": "https://pbs.twimg.com/media/FQDNJi1WUAER6Bo?format=jpg&name=small",
     "description": "Monitor and control your computer's fans.",
-    "categories": ["system", "fan control", "computer cooling", "temperature monitor", "Mac OS", "hardware monitoring"]
+    "categories": ["system", "fan control", "computer cooling", "temperature monitor", "Mac OS", "hardware monitoring"],
+    "suggester": "alpercun"
   },
   {
-    "id": 6,
     "name": "spectacle",
     "logo": "https://pbs.twimg.com/profile_images/697149200040124416/frE-tzOh_400x400.png",
     "description": "Move and resize windows with ease.",
-    "categories": ["productivity", "window management", "window resizing", "window dragging", "mac utility", "mac optimization", "mac productivity"]
+    "categories": [
+      "productivity",
+      "window management",
+      "window resizing",
+      "window dragging",
+      "mac utility",
+      "mac optimization",
+      "mac productivity"
+    ],
+    "suggester": "batin"
   },
   {
-    "id": 7,
     "name": "rectangle",
     "logo": "https://rectangleapp.com/assets/pro/images/mac512pts1x.png",
     "description": "Move and resize windows in macOS using keyboard shortcuts or snap areas.",
-    "categories": ["productivity", "macOS", "windows", "keyboard shortcuts", "resize", "snap areas", "window management"]
+    "categories": [
+      "productivity",
+      "macOS",
+      "windows",
+      "keyboard shortcuts",
+      "resize",
+      "snap areas",
+      "window management"
+    ]
   },
   {
-    "id": 8,
     "name": "authy",
     "logo": "https://seeklogo.com/images/A/authy-logo-5598145895-seeklogo.com.png",
     "description": "Enable 2FA for your favorite sites. Go beyond the password and protect yourself from hackers and account takeovers.",
-    "categories": ["2fa", "security", "password management", "online protection", "cyber safety", "authentication", "online verification"]
+    "categories": [
+      "2fa",
+      "security",
+      "password management",
+      "online protection",
+      "cyber safety",
+      "authentication",
+      "online verification"
+    ]
   },
   {
-    "id": 9,
     "name": "meetingbar",
     "logo": "https://is3-ssl.mzstatic.com/image/thumb/Purple112/v4/fb/cc/76/fbcc762c-9f12-3a57-b109-264656ad7d32/AppIcon-0-85-220-0-4-2x.png/1200x630bb.png",
     "description": "Your meetings before your eyes! MeetingBar shows your calendar events in the status bar. Create and join meetings in one click.",
-    "categories": ["calendar", "events", "scheduling", "productivity", "status bar", "time management", "meeting organization"]
+    "categories": [
+      "calendar",
+      "events",
+      "scheduling",
+      "productivity",
+      "status bar",
+      "time management",
+      "meeting organization"
+    ],
+    "suggester": "hasantezcan"
   },
   {
-    "id": 10,
     "name": "monitorcontrol",
     "logo": "https://raw.githubusercontent.com/MonitorControl/MonitorControl/main/.github/Icon-cropped.png",
     "description": "Controls your external display brightness and volume and shows native OSD. Use menulet sliders or the keyboard, including native Apple keys!",
-    "categories": ["productivity", "monitor control", "display brightness", "volume control", "menulet sliders", "keyboard control", "Apple keys", "external displays", "native OSD"]
+    "categories": [
+      "productivity",
+      "monitor control",
+      "display brightness",
+      "volume control",
+      "menulet sliders",
+      "keyboard control",
+      "Apple keys",
+      "external displays",
+      "native OSD"
+    ],
+    "suggester": "alpercun"
   },
   {
-    "id": 11,
     "name": "amethyst",
     "logo": "https://pbs.twimg.com/profile_images/657586067529293824/Af24--yK_400x400.png",
     "description": "A tiling window manager for macOS.",
-    "categories": ["macOS", "window manager", "tiling", "productivity", "organizational tools", "custom layouts"]
+    "categories": ["macOS", "window manager", "tiling", "productivity", "organizational tools", "custom layouts"],
+    "suggester": "alpercun"
   },
   {
-    "id": 12,
     "name": "sloth",
     "logo": "https://raw.githubusercontent.com/sveinbjornt/Sloth/master/resources/sloth_icon.png",
     "description": "Sloth is a native Mac app that shows all open files, directories, sockets, pipes, and devices in use by all running processes on your system. This makes it easy to inspect which apps are using which files, etc.",
-    "categories": ["system", "mac", "app", "process inspection", "open files", "directories", "sockets", "pipes", "devices", "system monitoring"]
+    "categories": [
+      "system",
+      "mac",
+      "app",
+      "process inspection",
+      "open files",
+      "directories",
+      "sockets",
+      "pipes",
+      "devices",
+      "system monitoring"
+    ]
   },
   {
-    "id": 13,
     "name": "lyricsx",
     "logo": "https://raw.githubusercontent.com/ddddxxx/LyricsX/master/docs/img/icon.png",
     "description": "Ultimate lyrics app for macOS.",
     "categories": ["lyrics", "music", "macOS", "song lyrics", "karaoke", "singing", "audio streaming"]
   },
   {
-    "id": 14,
     "name": "hush",
     "logo": "https://user-images.githubusercontent.com/378279/102943111-6dfe0500-44b7-11eb-9e9a-1c77d53a04ab.png",
     "description": "Block nags to accept cookies and privacy invasive tracking in Safari.",
     "categories": ["productivity", "privacy", "tracking", "Safari", "cookies", "security", "protection", "data privacy"]
   },
   {
-    "id": 15,
     "name": "colorsnapper",
     "logo": "https://pbs.twimg.com/profile_images/596352682660474881/gOmUUuzV_400x400.png",
     "description": "The color picker for Mac that makes it easy to inspect, adjust, organize, and export precise color values of any pixel on the screen.",
-    "categories": ["productivity", "color picker", "Mac", "color values", "inspection", "adjustment", "organization", "export"]
+    "categories": [
+      "productivity",
+      "color picker",
+      "Mac",
+      "color values",
+      "inspection",
+      "adjustment",
+      "organization",
+      "export"
+    ]
   },
   {
-    "id": 16,
     "name": "raycast",
     "logo": "https://pbs.twimg.com/profile_images/1450891458299703296/yJEV2j6W_400x400.jpg",
     "description": "Raycast is a blazingly fast, totally extendable launcher. It lets you complete tasks, calculate, share common links, and much more.",
-    "categories": ["launcher", "productivity", "time-saving", "efficiency", "shortcuts", "automation", "fast access"]
+    "categories": ["launcher", "productivity", "time-saving", "efficiency", "shortcuts", "automation", "fast access"],
+    "suggester": "alpercun"
   },
   {
-    "id": 17,
     "name": "betterdisplay",
     "logo": "https://raw.githubusercontent.com/waydabber/BetterDisplay/landing/.github/Icon-1024.png",
     "description": "Custom Resolutions, XDR/HDR Extra Brightness, Brightness Adjustment, Dummy Displays, Picture in Picture, Display Overrides - a macOS menubar app.",
-    "categories": ["productivity", "macOS", "menubar app", "custom resolutions", "XDR", "HDR", "extra brightness", "brightness adjustment", "dummy displays", "picture in picture", "display overrides"]
+    "categories": [
+      "productivity",
+      "macOS",
+      "menubar app",
+      "custom resolutions",
+      "XDR",
+      "HDR",
+      "extra brightness",
+      "brightness adjustment",
+      "dummy displays",
+      "picture in picture",
+      "display overrides"
+    ]
   },
   {
-    "id": 18,
     "name": "1password",
     "logo": "https://1password.com/img/redesign/logo-light-bg.svg",
     "description": "Password manager that keeps all passwords secure behind one password",
-    "categories": ["password manager", "security", "passwords", "encryption", "privacy", "password management", "password storage"]
+    "categories": [
+      "password manager",
+      "security",
+      "passwords",
+      "encryption",
+      "privacy",
+      "password management",
+      "password storage"
+    ]
   },
   {
-    "id": 19,
     "name": "macfuse",
     "logo": "https://avatars.githubusercontent.com/u/838036?s=200&v=4",
     "description": "File system integratio",
     "categories": ["file system"]
   },
   {
-    "id": 20,
     "name": "ngrok",
     "logo": "https://ngrok.com/static/img/ngrok-white.svg",
     "description": "Reverse proxy, secure introspectable tunnels to localhost",
     "categories": ["reverse proxy", "secure introspectable tunnels", "tunnels", "proxy", "secure", "introspectable"]
   },
   {
-    "id": 21,
     "name": "keycastr",
     "logo": "https://avatars.githubusercontent.com/keycastr?size=48",
     "description": "Open-source keystroke visualizer",
-    "categories": ["keystroke visualizer", "keystroke", "keystroke visualisation", "keystroke visualisation tool", "keystroke visualisation software", "keystroke visualisation app", "keystroke visualisation application", "keystroke visualisation platform"]
+    "categories": [
+      "keystroke visualizer",
+      "keystroke",
+      "keystroke visualisation",
+      "keystroke visualisation tool",
+      "keystroke visualisation software",
+      "keystroke visualisation app",
+      "keystroke visualisation application",
+      "keystroke visualisation platform"
+    ],
+    "suggester": "alpercun"
   },
   {
-    "id": 22,
     "name": "anydesk",
     "logo": "https://pbs.twimg.com/profile_images/983830065921363968/O082XLLI_400x400.jpg",
     "description": "Remote desktop software",
-    "categories": ["remote desktop", "remote desktop software", "remote desktop tool", "remote desktop application", "remote desktop platform"]
+    "categories": [
+      "remote desktop",
+      "remote desktop software",
+      "remote desktop tool",
+      "remote desktop application",
+      "remote desktop platform"
+    ]
   },
   {
-    "id": 23,
     "name": "shottr",
     "logo": "https://pbs.twimg.com/profile_images/1333186731617755140/vhgGGXPr_400x400.jpg",
     "description": "Screenshot tool",
-    "categories": ["screenshot", "screenshot tool", "screenshot application", "screenshot software", "screenshot platform"]
+    "categories": [
+      "screenshot",
+      "screenshot tool",
+      "screenshot application",
+      "screenshot software",
+      "screenshot platform"
+    ],
+    "suggester": "hasantezcan"
   },
   {
-    "id": 24,
     "name": "warp",
     "logo": "https://pbs.twimg.com/profile_images/1511227283444539395/JFY5O8ik_400x400.png",
     "description": "Rust-based terminal",
-    "categories": ["terminal", "terminal emulator", "terminal application", "terminal software", "terminal platform"]
+    "categories": ["terminal", "terminal emulator", "terminal application", "terminal software", "terminal platform"],
+    "suggester": "yunusemredilber"
   },
   {
-    "id": 25,
     "name": "karabiner-elements",
     "logo": "https://karabiner-elements.pqrs.org/images/logo.png",
     "description": "Keyboard customizer",
-    "categories": ["keyboard customizer", "keyboard customisation", "keyboard customisation tool", "keyboard customisation software", "keyboard customisation app", "keyboard customisation application", "keyboard customisation platform"]
+    "categories": [
+      "keyboard customizer",
+      "keyboard customisation",
+      "keyboard customisation tool",
+      "keyboard customisation software",
+      "keyboard customisation app",
+      "keyboard customisation application",
+      "keyboard customisation platform"
+    ]
   },
   {
-    "id": 26,
     "name": "iina",
     "logo": "https://raw.githubusercontent.com/iina/iina/master/iina/Assets.xcassets/AppIcon.appiconset/iina-icon-256.png",
     "description": "Free and open-source media player",
-    "categories": ["media player", "media player software", "media player tool", "media player application", "media player platform"]
+    "categories": [
+      "media player",
+      "media player software",
+      "media player tool",
+      "media player application",
+      "media player platform"
+    ],
+    "suggester": "alpercun"
   },
   {
-    "id": 27,
     "name": "insomnia",
     "logo": "https://pbs.twimg.com/profile_images/1367596400410722305/-X7hZiSm_400x400.jpg",
     "description": "API client",
-    "categories": ["api client", "api client software", "api client tool", "api client application", "api client platform"]
+    "categories": [
+      "api client",
+      "api client software",
+      "api client tool",
+      "api client application",
+      "api client platform"
+    ]
   },
   {
-    "id": 28,
     "name": "maccy",
     "logo": "https://camo.githubusercontent.com/c6a3c63f5d12ff71079d2f7e0936fefa8028d57e0f669ebfe912301270c2f92a/68747470733a2f2f6d616363792e6170702f696d672f6d616363792f4c6f676f2e706e67",
     "description": "Clipboard manager",
-    "categories": ["clipboard manager", "clipboard manager software", "clipboard manager tool", "clipboard manager application", "clipboard manager platform"]
+    "categories": [
+      "clipboard manager",
+      "clipboard manager software",
+      "clipboard manager tool",
+      "clipboard manager application",
+      "clipboard manager platform"
+    ]
   },
   {
-    "id": 29,
     "name": "hiddenbar",
     "logo": "https://raw.githubusercontent.com/dwarvesf/hidden/develop/img/icon_512%402x.png",
     "description": "Hidden Bar lets you hide menu bar items to give your Mac a cleaner look.",
     "categories": ["Productivity", "Menu Bar"],
-    "suggested-by": "hasantezcan"
+    "suggester": "hasantezcan"
   },
   {
-    "id": 30,
     "name": "itsycal",
     "logo": "https://pbs.twimg.com/profile_images/876284572488486912/wz5Wn8du_400x400.jpg",
     "description": "Itsycal is a tiny menu bar calendar.",
     "categories": ["Productivity", "Calendar", "Menu Bar"],
-    "suggested-by": "hasantezcan"
+    "suggester": "hasantezcan"
   },
   {
-    "id": 31,
     "name": "alt-tab",
     "logo": "https://d33wubrfki0l68.cloudfront.net/a006a16dc9b4af9d985b410d7813d2bffe4d51d1/96112/public/android-chrome-256x256.png",
     "description": "AltTab brings the power of Windows alt-tab to macOS",
     "categories": ["Productivity", "Windows Like"],
-    "suggested-by": "hasantezcan"
+    "suggester": "hasantezcan"
   },
   {
-    "id": 32,
     "name": "runjs",
     "logo": "https://runjs.app/static/icon.svg",
     "description": "JavaScript playground that auto-evaluates as code is typed",
     "categories": ["Productivity", "JavaScript", "Playground", "Code Editor"],
-    "suggested-by": "hasantezcan"
+    "suggester": "hasantezcan"
   },
   {
-    "id": 33,
     "name": "linear-linear",
-    "logo": "https://pbs.twimg.com/profile_images/1602713683704127491/QdfI0c7L_400x400.jpg",
+    "logo": "https://linear.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FappIcon.8a73aef2.png&w=1080&q=75",
     "description": "Meet the new standard for modern software development. Streamline issues, sprints, and product roadmaps.",
     "categories": ["Productivity", "Project Management", "Task Management"],
-    "suggested-by": "hasantezcan"
+    "suggester": "hasantezcan"
   },
   {
-    "id": 34,
     "name": "background-music",
     "logo": "https://raw.githubusercontent.com/kyleneideck/BackgroundMusic/master/Images/README/FermataIcon.png",
     "description": "Background Music automatically pauses your music player when a second audio source is playing and unpauses the player when the second source has stopped.",
     "categories": ["Productivity", "Music", "Audio"]
   },
   {
-    "id": 35,
     "name": "bitwarden",
     "logo": "https://avatars.githubusercontent.com/u/15990069?s=200&v=4",
     "description": "Open source password management solutions for individuals, teams, and business organizations.",
     "categories": ["Productivity", "Password Manager", "Security"]
   },
   {
-    "id": 36,
     "name": "flameshot",
     "logo": "https://flameshot.org/flameshot-icon.svg",
     "description": "Powerful, yet simple to use open-source screenshot software.",
     "categories": ["Productivity", "Screenshot", "Screen Capture"]
   },
   {
-    "id": 37,
-    "name":"the-unarchiver",
+    "name": "the-unarchiver",
     "logo": "https://cdn.theunarchiver.com/img/unarchiver.png",
     "description": "The Unarchiver is the only app you need to open RAR on Mac. It’s times more powerful than the native macOS utility and supports infinitely more archive formats.",
     "categories": ["Productivity", "Archive", "Unarchive"]
   },
   {
-    "id": 38,
     "name": "dozer",
     "logo": "https://raw.githubusercontent.com/Mortennn/Dozer/master/Stuff/AppIcon.png",
     "description": "Hide menu bar icons to give your Mac a cleaner look.",
     "categories": ["Productivity", "Menu Bar"]
   },
   {
-    "id": 39,
     "name": "unnaturalscrollwheels",
     "logo": "https://raw.githubusercontent.com/ther0n/UnnaturalScrollWheels/master/UnnaturalScrollWheels/Assets.xcassets/AppIcon.appiconset/256x256.png",
     "description": "Invert scroll direction for physical scroll wheels while maintaining 'Natural' scrolling for trackpads on MacOS.",
     "categories": ["Productivity", "Scrolling"]
   },
   {
-    "id": 40,
     "name": "mos",
     "logo": "https://mos.caldis.me/resources/image/logo-big.png",
     "description": "A lightweight tool used to smooth scrolling and set scroll direction independently for your mouse on MacOS",
     "categories": ["Productivity", "Scrolling"]
   },
   {
-    "id": 41,
     "name": "keepingyouawake",
     "logo": "https://keepingyouawake.app/icon-128@2x.f6dddd43.png",
     "description": "Tool to prevent the system from going into sleep mode.",
     "categories": ["Productivity", "Sleep"]
   },
   {
-    "id": 42,
     "name": "linearmouse",
     "logo": "https://raw.githubusercontent.com/linearmouse/linearmouse/main/logo.svg",
     "description": "Customize mouse behavior",
     "categories": ["Productivity", "Mouse"]
   },
   {
-    "id": 43,
     "name": "notunes",
     "logo": "https://raw.githubusercontent.com/tombonez/noTunes/master/screenshots/app-icon.png",
     "description": "noTunes is a macOS application that will prevent iTunes or Apple Music from launching. Simply launch the noTunes app and iTunes/Music will no longer be able to launch. For example, when bluetooth headphones reconnect.",
     "categories": ["Productivity", "Music", "iTunes"]
   },
   {
-    "id": 44,
     "name": "syntax-highlight",
     "logo": "https://raw.githubusercontent.com/sbarex/SourceCodeSyntaxHighlight/master/assets/icon.png",
     "description": "The application offers a Quick Look Extension for macOS 10.15 Catalina and later for previewing source files. Inside it uses Highlight to render source code with syntax highlighting.",
     "categories": ["Productivity", "Quick Look", "Syntax Highlight"]
   },
   {
-    "id": 45,
     "name": "kap",
     "logo": "https://camo.githubusercontent.com/e272bb8007b4854234f6d98859bc7eb86bc60c723c1545506f783d4b1d15b082/68747470733a2f2f6765746b61702e636f2f7374617469632f66617669636f6e2f6b61702e737667",
     "description": "An open-source screen recorder built with web technology",
     "categories": ["Productivity", "Screen Recorder"]
   },
   {
-    "id": 46,
     "name": "bluesnooze",
     "logo": "https://raw.githubusercontent.com/odlp/bluesnooze/main/images/icon.png",
     "description": "Bluesnooze prevents your sleeping Mac from connecting to Bluetooth accessories.",
     "categories": ["Productivity", "Bluetooth", "Sleep"]
   },
   {
-    "id": 47,
     "name": "todoist",
     "logo": "https://pbs.twimg.com/profile_images/1235302046460497920/WcXKmXnQ_400x400.jpg",
     "description": "Todoist is a task management app that helps you get organized and be more productive.",
     "categories": ["Productivity", "Task Management"]
   },
   {
-    "id": 48,
     "name": "middleclick",
     "logo": "https://raw.githubusercontent.com/artginzburg/MiddleClick-Ventura/main/MiddleClick/Images.xcassets/AppIcon.appiconset/mouse128x128.png",
     "description": "Emulate a scroll wheel click with three finger Click or Tap on MacBook trackpad and Magic Mouse",
     "categories": ["Productivity", "Mouse"]
   },
   {
-   "id": 49,
-   "name": "gas-mask",
-   "logo": "https://raw.githubusercontent.com/2ndalpha/gasmask/master/Resources/Images/About%20Box%20Image.png",
-   "description": "Gas Mask is a simple hosts file manager for macOS. It allows editing of host files and switching between them.",
-   "categories": ["Hosts", "System"]
+    "name": "gas-mask",
+    "logo": "https://raw.githubusercontent.com/2ndalpha/gasmask/master/Resources/Images/About%20Box%20Image.png",
+    "description": "Gas Mask is a simple hosts file manager for macOS. It allows editing of host files and switching between them.",
+    "categories": ["Hosts", "System"],
+    "suggester": "batin"
   },
   {
-    "id": 50,
     "name": "lunar",
     "logo": "https://static.lunar.fyi/svg/lunar.svg",
     "description": "Intelligent adaptive brightness for your external monitors.",
-    "categories": ["Display", "Brightness", "XDR"]
+    "categories": ["Display", "Brightness", "XDR"],
+    "suggester": "boratanrikulu"
   },
   {
-    "id": 51,
     "name": "obsidian",
     "logo": "https://avatars.githubusercontent.com/u/65011256?s=200&v=4",
     "description": "Obsidian is a powerful and extensible knowledge base that works on top of your local folder of plain text files.",
-    "categories": ["Productivity", "Note Taking"]
+    "categories": ["Productivity", "Note Taking"],
+    "suggester": "volkanto"
   },
   {
-    "id": 52,
     "name": "notion",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png",
     "description": "One workspace. Every team. We’re more than a doc. Or a table. Customize Notion to work the way you do.",
-    "categories": ["Productivity", "Note Taking"]
+    "categories": ["Productivity", "Note Taking"],
+    "suggester": "volkanto"
   },
   {
-    "id": 53,
     "name": "agenda",
     "logo": "https://yt3.googleusercontent.com/ytc/AL5GRJXI7aLpISA5vEFMtg34RtPYAPsm7m6OAMXxQhjt=s176-c-k-c0x00ffffff-no-rj",
     "description": "Agenda is a date-focused note taking app for both planning and documenting your projects.",
-    "categories": ["Productivity", "Note Taking"]
+    "categories": ["Productivity", "Note Taking"],
+    "suggester": "volkanto"
+  },
+  {
+    "name": "jetbrains-toolbox",
+    "logo": "https://resources.jetbrains.com/storage/products/toolbox/img/meta/toolbox_logo_300x300.png",
+    "description": "Manage your JetBrains tools easily.",
+    "categories": ["Productivity", "IDE", "Development"],
+    "suggester": "volkanto"
+  },
+  {
+    "name": "numi",
+    "logo": "https://numi.app/images/numi-icon@2x.png",
+    "description": "Numi is a handy calculator app for macOS. It allows you to describe tasks naturally and instantly get an accurate answer.",
+    "categories": ["calculator", "productivity", "macOS"],
+    "suggester": "rmarquet21"
+  },
+  {
+    "name": "github",
+    "logo": "https://desktop.github.com/images/desktop-icon.svg",
+    "description": "Desktop client for GitHub repositories.",
+    "categories": ["Productivity", "GitHub", "Development"],
+    "suggester": "volkanto"
   },
   {
     "name": "lightshot",

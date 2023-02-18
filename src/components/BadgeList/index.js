@@ -1,71 +1,65 @@
-import { useRef, useState } from 'react'
-import { Badge } from '../Badge'
-import { ReactComponent as ExpandLeftArrow } from '../../assets/svg/expand-left-arrow.svg'
-import { ReactComponent as ExpandRightArrow } from '../../assets/svg/expand-right-arrow.svg'
-import db from '../../assets/db.json'
+import { useRef, useState, useEffect } from "react";
+import { Badge } from "../Badge";
+import { ReactComponent as ExpandLeftArrow } from "../../assets/svg/expand-left-arrow.svg";
+import { ReactComponent as ExpandRightArrow } from "../../assets/svg/expand-right-arrow.svg";
 
+const BadgeList = ({ addSearchCategory, badgeTypes, slideOffset, data }) => {
+  const [scrollStart, setScrollStart] = useState(0);
+  const [hasMoreItem, setHasMoreItem] = useState(false);
+  let scrollWrapperRef = useRef(null);
+  let badgeListRef = useRef(null);
 
-const badgeTypes = Array.from(new Set(db.reduce((acc, item) => acc.concat(item.categories), [])));
+  useEffect(() => {
+    scrollCheck();
+  }, [data]);
 
-const BadgeList = ({ addSearchCategory }) => {
-  const [scrollX, setscrollX] = useState(0);
-  const [scrolEnd, setscrolEnd] = useState(false);
-
-  let scrl = useRef(null);
-
-  //Slide click
-  const slide = (shift) => {
-    scrl.current.scrollLeft += shift;
-    setscrollX(scrollX + shift);
-
-    if (
-      Math.floor(scrl.current.scrollWidth - scrl.current.scrollLeft) <=
-      scrl.current.offsetWidth
-    ) {
-      setscrolEnd(true);
-    } else {
-      setscrolEnd(false);
-    }
+  const slide = (event, direction) => {
+    const shift = direction === "left" ? -slideOffset : slideOffset;
+    event.preventDefault();
+    event.stopPropagation();
+    scrollWrapperRef.current.scrollLeft += shift;
+    setScrollStart(scrollStart + shift);
   };
 
   const scrollCheck = () => {
-    setscrollX(scrl.current.scrollLeft);
-    if (
-      Math.floor(scrl.current.scrollWidth - scrl.current.scrollLeft) <=
-      scrl.current.offsetWidth
-    ) {
-      setscrolEnd(true);
+    const scrollHead = scrollWrapperRef.current.scrollLeft + badgeListRef.current.scrollWidth + 30;
+    const hasOnePage = scrollWrapperRef.current.scrollWidth < badgeListRef.current.scrollWidth;
+
+    if (hasOnePage) {
+      setHasMoreItem(false);
+      return;
+    }
+
+    if (scrollHead >= scrollWrapperRef.current.scrollWidth) {
+      setHasMoreItem(false);
     } else {
-      setscrolEnd(false);
+      setHasMoreItem(true);
     }
   };
 
   return (
-    <div className="badge-list">
-      {scrollX !== 0 && (
-        <div className='icon'>
-          <ExpandLeftArrow onClick={() => slide(-75)} />
-          <div className='icon-ghost-left' />
-        </div>
-      )}
-      <div ref={scrl} onScroll={scrollCheck} className='scroll-badge-content'>
-        {
-          badgeTypes.map(
-            (category, index) =>
-              <Badge category={category} key={index} addSearchCategory={addSearchCategory} />
-          )
-        }
-      </div>
-      {!scrolEnd && (
-        <>
-          <div className='icon'>
-            <div className='icon-ghost-right' />
-            <ExpandRightArrow onClick={() => slide(+75)} />
+    <div className="badge-list-wrapper">
+      <div className="badge-list" ref={badgeListRef}>
+        {scrollStart !== 0 && (
+          <div className="icon scroll-button scroll-button-start" onClick={(event) => slide(event, "left")}>
+            <ExpandLeftArrow />
+            <div className="icon-ghost-left" />
           </div>
-        </>
-      )}
+        )}
+        <div ref={scrollWrapperRef} onScroll={scrollCheck} className="scroll-badge-content">
+          {badgeTypes.map((category, index) => (
+            <Badge category={category} key={index} addSearchCategory={addSearchCategory} />
+          ))}
+        </div>
+        {hasMoreItem && (
+          <div className="icon scroll-button scroll-button-end" onClick={(event) => slide(event, "right")}>
+            <div className="icon-ghost-right" />
+            <ExpandRightArrow />
+          </div>
+        )}
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export { BadgeList }
+export { BadgeList };

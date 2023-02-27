@@ -52,6 +52,7 @@
         flex: 1;
         justify-content: center;
         overflow-y: scroll;
+        overscroll-behavior: contain;
         margin-top: $spacer-3;
       }
     }

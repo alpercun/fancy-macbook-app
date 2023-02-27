@@ -7,7 +7,7 @@
   transition: 0.3s;
   position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-direction: column;
   cursor: pointer;
 
@@ -20,6 +20,7 @@
       img {
         width: 60px;
         height: 60px;
+        display: block;
         border-radius: 16px;
         background-color: $gray-5;
       }
@@ -72,6 +73,7 @@
     line-height: 22px;
     user-select: none;
     overflow-y: auto;
+    margin: 20px 0;
   }
 
   .categories {
@@ -79,6 +81,7 @@
     flex-wrap: wrap;
     max-height: 67px;
     overflow-y: scroll;
+    margin-top: auto;
 
     > * {
       margin-right: $spacer-2;

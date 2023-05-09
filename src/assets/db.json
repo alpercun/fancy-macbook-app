@@ -19,7 +19,15 @@
     "name": "alfred",
     "logo": "https://pbs.twimg.com/profile_images/3441709541/9fb69dcff86624e62ecaaa58c363e15b_400x400.jpeg",
     "description": "Alfred is an award-winning app for macOS which boosts your efficiency with hotkeys, keywords, text expansion and more.",
-    "categories": ["macOS", "productivity", "efficiency", "hotkeys", "keywords", "text expansion", "automation"],
+    "categories": [
+      "macOS",
+      "productivity",
+      "efficiency",
+      "hotkeys",
+      "keywords",
+      "text expansion",
+      "automation"
+    ],
     "suggester": "batin"
   },
   {
@@ -27,7 +35,7 @@
     "logo": "https://is3-ssl.mzstatic.com/image/thumb/Purple126/v4/bc/b5/59/bcb55927-00cd-dde6-8b7c-87082f2f1ecc/PMDisplaperture.png/230x0w.webp",
     "description": "Displaperture lets you round the corners of your display by an amount you define—anything from a subtle hint of rounding to a full-on oval, it's under your control.",
     "categories": [
-      "apperance",
+      "appearance",
       "display customization",
       "screen rounding",
       "screen corners",
@@ -57,7 +65,14 @@
     "name": "macs-fan-control",
     "logo": "https://pbs.twimg.com/media/FQDNJi1WUAER6Bo?format=jpg&name=small",
     "description": "Monitor and control your computer's fans.",
-    "categories": ["system", "fan control", "computer cooling", "temperature monitor", "Mac OS", "hardware monitoring"],
+    "categories": [
+      "system",
+      "fan control",
+      "computer cooling",
+      "temperature monitor",
+      "Mac OS",
+      "hardware monitoring"
+    ],
     "suggester": "alpercun"
   },
   {
@@ -139,7 +154,14 @@
     "name": "amethyst",
     "logo": "https://pbs.twimg.com/profile_images/657586067529293824/Af24--yK_400x400.png",
     "description": "A tiling window manager for macOS.",
-    "categories": ["macOS", "window manager", "tiling", "productivity", "organizational tools", "custom layouts"],
+    "categories": [
+      "macOS",
+      "window manager",
+      "tiling",
+      "productivity",
+      "organizational tools",
+      "custom layouts"
+    ],
     "suggester": "alpercun"
   },
   {
@@ -163,13 +185,30 @@
     "name": "lyricsx",
     "logo": "https://raw.githubusercontent.com/ddddxxx/LyricsX/master/docs/img/icon.png",
     "description": "Ultimate lyrics app for macOS.",
-    "categories": ["lyrics", "music", "macOS", "song lyrics", "karaoke", "singing", "audio streaming"]
+    "categories": [
+      "lyrics",
+      "music",
+      "macOS",
+      "song lyrics",
+      "karaoke",
+      "singing",
+      "audio streaming"
+    ]
   },
   {
     "name": "hush",
     "logo": "https://user-images.githubusercontent.com/378279/102943111-6dfe0500-44b7-11eb-9e9a-1c77d53a04ab.png",
     "description": "Block nags to accept cookies and privacy invasive tracking in Safari.",
-    "categories": ["productivity", "privacy", "tracking", "Safari", "cookies", "security", "protection", "data privacy"]
+    "categories": [
+      "productivity",
+      "privacy",
+      "tracking",
+      "Safari",
+      "cookies",
+      "security",
+      "protection",
+      "data privacy"
+    ]
   },
   {
     "name": "colorsnapper",
@@ -190,7 +229,15 @@
     "name": "raycast",
     "logo": "https://pbs.twimg.com/profile_images/1450891458299703296/yJEV2j6W_400x400.jpg",
     "description": "Raycast is a blazingly fast, totally extendable launcher. It lets you complete tasks, calculate, share common links, and much more.",
-    "categories": ["launcher", "productivity", "time-saving", "efficiency", "shortcuts", "automation", "fast access"],
+    "categories": [
+      "launcher",
+      "productivity",
+      "time-saving",
+      "efficiency",
+      "shortcuts",
+      "automation",
+      "fast access"
+    ],
     "suggester": "alpercun"
   },
   {
@@ -235,7 +282,14 @@
     "name": "ngrok",
     "logo": "https://ngrok.com/static/img/ngrok-white.svg",
     "description": "Reverse proxy, secure introspectable tunnels to localhost",
-    "categories": ["reverse proxy", "secure introspectable tunnels", "tunnels", "proxy", "secure", "introspectable"]
+    "categories": [
+      "reverse proxy",
+      "secure introspectable tunnels",
+      "tunnels",
+      "proxy",
+      "secure",
+      "introspectable"
+    ]
   },
   {
     "name": "keycastr",
@@ -282,7 +336,13 @@
     "name": "warp",
     "logo": "https://pbs.twimg.com/profile_images/1511227283444539395/JFY5O8ik_400x400.png",
     "description": "Rust-based terminal",
-    "categories": ["terminal", "terminal emulator", "terminal application", "terminal software", "terminal platform"],
+    "categories": [
+      "terminal",
+      "terminal emulator",
+      "terminal application",
+      "terminal software",
+      "terminal platform"
+    ],
     "suggester": "yunusemredilber"
   },
   {
@@ -523,7 +583,7 @@
     "description": "Lightshot is a free program that offers a quick and easy way to capture a screen including basic editing tools.",
     "categories": ["Screenshot", "Productivity", "Screen Capture"],
     "suggester": "oguzhantasimaz"
-   },
+  },
   {
     "name": "hot",
     "logo": "https://static.macupdate.com/products/62792/m/hot-logo.webp?v=1668712882",
@@ -535,7 +595,13 @@
     "name": "tiles",
     "logo": "https://static.macupdate.com/products/61314/m/tiles-logo.webp?v=1656609368",
     "description": "The minimalist window manager.",
-    "categories": ["Window Manager", "Tiling", "Productivity", "Organizational Tools", "Custom Layouts"],
+    "categories": [
+      "Window Manager",
+      "Tiling",
+      "Productivity",
+      "Organizational Tools",
+      "Custom Layouts"
+    ],
     "suggester": "oguzhantasimaz"
   }
 ]

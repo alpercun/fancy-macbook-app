@@ -603,5 +603,18 @@
       "Custom Layouts"
     ],
     "suggester": "oguzhantasimaz"
+  },
+  {
+    "name": "ruby",
+    "logo": "https://www.ruby-lang.org/images/header-ruby-logo.png",
+    "description": "Powerful, clean, object-oriented scripting language",
+    "categories": [
+      "Programming",
+      "Scripting",
+      "Development",
+      "Ruby",
+      "Ruby on Rails"
+    ],
+    "suggester": "alpercun"
   }
 ]
